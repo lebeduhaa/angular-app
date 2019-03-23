@@ -1,0 +1,12 @@
+.app__wrapper {
+  height: 100%;
+  position: relative;
+}
+.app__home-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68px;
+  height: 100%;
+  z-index: 2;
+}

@@ -7,6 +7,7 @@ import { SourcesComponent } from './component/sources/sources.component';
 import { FeedbackComponent } from './component/feedback/feedback.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { HomeNavigationComponent } from './component/home-navigation/home-navigation.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     MainComponent,
     AboutComponent,
     SourcesComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    HomeNavigationComponent
   ],
   exports: [
     HomeComponent

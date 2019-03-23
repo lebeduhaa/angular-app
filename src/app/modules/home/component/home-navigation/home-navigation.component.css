@@ -1,0 +1,30 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 23px;
+  border-left: 1px solid #d0d0d0;
+}
+.navigation__links {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.navigation__link {
+  margin-left: -6px;
+  background-color: #f8f8f8;
+  padding: 18px 0;
+  cursor: pointer;
+  outline: none;
+  font-family: 'SFUIText-Light';
+}
+.navigation__link_active {
+  font-family: 'SFUIDisplay-Medium';
+}
+.navigation__link:first-child {
+  padding-top: 50px;
+}
+.navigation__link:last-child {
+  padding-bottom: 50px;
+}
