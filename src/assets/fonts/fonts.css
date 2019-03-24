@@ -38,3 +38,32 @@
   font-weight:normal;
 }
 
+@font-face {
+  font-family: "SFUIText-Heavy";
+  src: url("/assets/fonts/SanFrancisco/SFUIText-Heavy/SFUIText-Heavy.eot");
+  src: url("/assets/fonts/SanFrancisco/SFUIText-Heavy/SFUIText-Heavy.eot?#iefix")format("embedded-opentype"),
+  url("/assets/fonts/SanFrancisco/SFUIText-Heavy/SFUIText-Heavy.woff")format("woff"),
+  url("/assets/fonts/SanFrancisco/SFUIText-Heavy/SFUIText-Heavy.ttf")format("truetype");
+  font-style: normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Thin";
+  src: url("/assets/fonts/SanFrancisco/SFUIDisplay-Thin/SFUIDisplay-Thin.eot");
+  src: url("/assets/fonts/SanFrancisco/SFUIDisplay-Thin/SFUIDisplay-Thin.eot?#iefix")format("embedded-opentype"),
+  url("/assets/fonts/SanFrancisco/SFUIDisplay-Thin/SFUIDisplay-Thin.woff")format("woff"),
+  url("/assets/fonts/SanFrancisco/SFUIDisplay-Thin/SFUIDisplay-Thin.ttf")format("truetype");
+  font-style: normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Regular";
+  src: url("/assets/fonts/SanFrancisco/SFUIDisplay-Regular/SFUIDisplay-Regular.eot");
+  src: url("/assets/fonts/SanFrancisco/SFUIDisplay-Regular/SFUIDisplay-Regular.eot?#iefix")format("embedded-opentype"),
+  url("/assets/fonts/SanFrancisco/SFUIDisplay-Regular/SFUIDisplay-Regular.woff")format("woff"),
+  url("/assets/fonts/SanFrancisco/SFUIDisplay-Regular/SFUIDisplay-Regular.ttf")format("truetype");
+  font-style: normal;
+  font-weight:normal;
+}

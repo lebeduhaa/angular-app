@@ -14,8 +14,8 @@ import { HomeComponent } from './component/home.component';
         path: 'home',
         component: HomeComponent,
         children: [
-          { path: 'main', component: MainComponent, data: {animation: '1'} },
-          { path: 'about', component: AboutComponent, data: {animation: '2'} },
+          { path: 'main', component: MainComponent, data: {animation: 'Main'} },
+          { path: 'about', component: AboutComponent, data: {animation: 'About'} },
           { path: 'sources', component: SourcesComponent, data: {animation: 'Sources'} },
           { path: 'feedback', component: FeedbackComponent, data: {animation: 'Feedback'} }
         ]

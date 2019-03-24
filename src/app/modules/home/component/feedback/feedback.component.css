@@ -1,0 +1,97 @@
+.feedback {
+  background-image: url('../../../../../assets/img/feedback/feedback-back.png');
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback__form {
+  padding: 65px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .2);
+}
+.feedback__form-title {
+  font-family: 'SFUIDisplay-Medium';
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.feedback__form-description {
+  font-family: 'SFUIDisplay-Thin';
+  font-size: 20px;
+  line-height: 30px;
+  width: 50%;
+  text-align: center;
+  color: #666666;
+}
+.feedback__control input {
+  width: 870px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  font-family: 'SFUIDisplay-Light';
+  font-size: 20px;
+  outline: none;
+  color: #666666;
+}
+.feedback__control {
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  padding-left: 80px;
+  border-bottom: 1px solid #dedede;
+}
+.feedback__control_name {
+  background-image: url('../../../../../assets/img/feedback/name.png');
+}
+.feedback__control_email {
+  background-image: url('../../../../../assets/img/feedback/email.png');
+}
+.feedback__control_message {
+  background-image: url('../../../../../assets/img/feedback/message.png');
+}
+.feedback__send {
+  font-family: 'SFUIDisplay-Regular';
+  border: none;
+  background-image: url('../../../../../assets/img/button.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100% 100%;
+  background-position: center center;
+  color: white;
+  width: 280px;
+  height: 65px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+}
+.feedback__send:hover {
+  box-shadow: 0 0 10px gray;
+}
+.feedback__send:active {
+  box-shadow: inset 0 0 5px white;
+}
+.feedback__send-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url('../../../../../assets/img/feedback/send.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-left: 30px;
+}
+.feedback__send-content {
+  border-right: 1px solid white;
+  padding: 0 30px;
+}

@@ -2,7 +2,7 @@ import { trigger, transition, style, group, query, animate } from '@angular/anim
 
 export const routerAnimations =
 trigger('routeAnimations', [
-  transition('2 => 1', [
+  transition('About => Main, Sources => Main, Feedback => Main, Sourcecs => About, Feedback => About, Feedback => Sources', [
     style({ position: 'relative' }),
     query(':enter, :leave', [
       style({
@@ -25,7 +25,7 @@ trigger('routeAnimations', [
       ])
     ]),
   ]),
-  transition('1 => 2', [
+  transition('Main => About, Main => Sources, Main => Feedback, About => Sources, About => Feedback, Sources => Feedback', [
     style({ position: 'relative' }),
     query(':enter, :leave', [
       style({
