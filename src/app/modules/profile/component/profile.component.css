@@ -1,0 +1,244 @@
+.profile {
+  background-image: url('../../../../assets/img/profile/profile-back.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profile__wrapper {
+  height: 100%;
+  padding-top: 120px;
+}
+.profile__goal-cards {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 130px;
+}
+.profile__goal-card {
+  margin-right: 50px;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__goal-card:last-child {
+  margin-right: 0;
+}
+.profile__goal-card_selected, .profile__goal-card_selected-directive {
+  transform: scale(1.1);
+  padding: 0 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.profile__goal-card_selected .profile__goal-card_line {
+  height: 3px;
+  width: 75px;
+  background-color: #61be64;
+  margin-top: -3px;
+}
+.profile__goal-action {
+  margin-top: 85px;
+  text-align: center;
+}
+.profile__goal-button {
+  border: none;
+  background-image: url('../../../../assets/img/button.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100% 100%;
+  background-position: center center;
+  font-family: 'SFUIDisplay-Medium';
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+}
+.profile__goal-button:hover, .profile__parameters-next-button:hover, .profile__parameters-prev-button:hover, .profile__preferences-add:hover {
+  box-shadow: 0 0 10px gray;
+}
+.profile__goal-button:active, .profile__parameters-next-button:active, .profile__parameters-prev-button:active, .profile__preferences-add:active {
+  box-shadow: inset 0 0 5px white;
+}
+.profile__parameters-prev-button {
+  border: none;
+  background-color: white;
+  font-family: 'SFUIDisplay-Regular';
+  font-size: 15x;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+}
+.profile__parameters-next-button {
+  border: none;
+  background-image: url('../../../../assets/img/button.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100% 100%;
+  background-position: center center;
+  font-family: 'SFUIDisplay-Regular';
+  font-size: 15x;
+  color: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+}
+.profile__parameters {
+  color: #212121;
+  width: 1000px;
+  margin: 0 auto;
+}
+.profile__parameters-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.profile__parameters-content {
+  background-color: #fff;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+.profile__personal-data {
+  padding: 40px 80px;
+}
+.profile__personal-data-value {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d8d8d8;
+  margin-top: 20px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+.profile__personal-data-title {
+  font-size: 19px;
+  color: #5abd66;
+  font-family: 'SFUIDisplay-Medium';
+  border-left: 2px solid #5abd66;
+  padding: 4px 0;
+  margin-left: -80px;
+  padding-left: 77px;
+}
+.profile__personal-data__group {
+  flex-basis: 46.3%;
+}
+.profile__personal-data__group .mat-form-field {
+  width: 100%;
+}
+.profile__personal-data-value2 {
+  display: flex;
+  margin-bottom: 30px;
+}
+.profile__personal-data__pregnancy {
+  margin-left: 66px;
+}
+.profile__preferences {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d8d8d8;
+  margin-top: 20px;
+  padding-top: 40px;
+}
+.profile__preferences-item {
+  flex-basis: 16.6%;
+  margin-top: 35px;
+}
+.profile__preferences-item .mat-checkbox {
+  font-size: 15px;
+  font-family: 'SFUIDisplay-Light';
+}
+.profile__preferences-add {
+  margin-top: 30px;
+  flex-basis: 33.3%;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(78, 78, 78, 0.3);
+  border-radius: 4px;
+}
+.profile__preferences-add button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 30px;
+  font-size: 15px;
+  font-family: 'SFUIDisplay-Regular';
+  border: none;
+  background-color: transparent;
+  background-image: url('../../../../assets/img/button.png');
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+button .mat-icon {
+  position: relative;
+  z-index: 3;
+}
+.profile__preferences-rect {
+  position: absolute;
+  right: -14px;
+  top: -9px;
+  height: 75px;
+  width: 75px;
+  background-color: #fff;
+  z-index: 2;
+  transform: rotate(30deg);
+}
+.profile__parameters-next-button_ok {
+  width: 95px;
+}
+.profile__additional-preferences-wrapper {
+  padding: 50px 0;
+  position: relative;
+}
+.profile__additional-preferences {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.preference__group {
+  flex-basis: 50%;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+.preference__group-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'SFUIDisplay-Semibold';
+  color: #42b86c;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.preference__group-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.preference__group-item {
+  flex-basis: 33.3%;
+  margin-bottom: 25px;
+}
+.profile__additional-preferences-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.profile__additional-preferences-close .mat-icon:hover {
+  text-shadow: 0 0 1px black;
+}

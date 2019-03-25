@@ -1,0 +1,142 @@
+<div class="profile">
+  <div class="profile__wrapper">
+    <app-profile-navigation
+      [currentStep]="currentStep"
+      (changeCurrentStepEvent)="reactOnChangeCurrentStepEvent($event)"
+    ></app-profile-navigation>
+    <div class="profile__steps">
+      <div class="profile__goal" *ngIf="currentStep === 1">
+        <div class="profile__goal-cards">
+          <div
+            appHoverScale
+            class="profile__goal-card"
+            [class.profile__goal-card_selected]="firstGoalSelected()"
+            (click)="changeGoal(1)"
+          >
+            <app-goal-card
+              [image]="'first-card.png'"
+              [title]="'похудеть'"
+              [description]="'Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.'"
+            ></app-goal-card>
+            <div class="profile__goal-card_line"></div>
+          </div>
+          <div
+            appHoverScale
+            class="profile__goal-card"
+            [class.profile__goal-card_selected]="secondGoalSelected()"
+            (click)="changeGoal(2)"
+          >
+            <app-goal-card
+              [image]="'second-card.png'"
+              [title]="'баланс'"
+              [description]="'Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.'"
+            ></app-goal-card>
+            <div class="profile__goal-card_line"></div>
+          </div>
+          <div
+            appHoverScale
+            class="profile__goal-card"
+            [class.profile__goal-card_selected]="thirdGoalSelected()"
+            (click)="changeGoal(3)"
+          >
+            <app-goal-card
+              [image]="'third-card.png'"
+              [title]="'набрать'"
+              [description]="'Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.'"
+            ></app-goal-card>
+            <div class="profile__goal-card_line"></div>
+          </div>
+        </div>
+        <div class="profile__goal-action">
+          <button class="profile__goal-button" (click)="reactOnChangeCurrentStepEvent(2)">Продолжить</button>
+        </div>
+      </div>
+      <div class="profile__parameters" *ngIf="currentStep === 2">
+        <div class="profile__parameters-content">
+          <div id="profile__personal-data" class="profile__personal-data" *ngIf="!addPreferencesVisibility">
+            <div class="profile__personal-data-title">Ваши Данные</div>
+            <div class="profile__personal-data-value">
+              <div class="profile__personal-data__male">
+                  <mat-form-field>
+                    <mat-select placeholder="Пол">
+                      <mat-option [value]="'Мужской'">Мужской</mat-option>
+                      <mat-option [value]="'Женский'">Женский</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="profile__personal-data__age">
+                  <mat-form-field>
+                    <mat-select placeholder="Пол">
+                      <mat-option *ngFor="let age of ages" [value]="age">
+                        {{age}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="profile__personal-data__height">
+                  <mat-form-field>
+                    <input matInput placeholder="Рост">
+                  </mat-form-field>
+                </div>
+                <div class="profile__personal-data__weight">
+                  <mat-form-field>
+                    <input matInput placeholder="Вес">
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="profile__personal-data-value2">
+              <div class="profile__personal-data__group">
+                  <mat-form-field>
+                    <mat-select placeholder="Группа труда">
+                      <mat-option *ngFor="let group of groups" [value]="group">
+                        {{group}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="profile__personal-data__pregnancy">
+                  <mat-form-field>
+                    <mat-select placeholder="Беременность">
+                      <mat-option [value]="'Да'">Да</mat-option>
+                      <mat-option [value]="'Нет'">Нет</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="profile__personal-data-title">Ваши Предпочтения</div>
+            <div class="profile__preferences">
+              <div class="profile__preferences-item" *ngFor="let preference of preferences">
+                <mat-checkbox [(ngModel)]="preference.selected">{{preference.name}}</mat-checkbox>
+              </div>
+              <div (click)="toggleAddPreferencesVisibility()" class="profile__preferences-add">
+                <button>Добавить продукты <div class="profile__preferences-rect"></div> <mat-icon color="accent">add</mat-icon></button>
+              </div>
+            </div>
+          </div>
+            <div class="profile__additional-preferences-wrapper" *ngIf="addPreferencesVisibility">
+              <div class="profile__additional-preferences-close" (click)="closeAdditionalPreferences()">
+                <mat-icon>close</mat-icon>
+              </div>
+              <perfect-scrollbar [ngStyle]="{'max-height': scrollHeight + 'px'}">
+                <div class="profile__additional-preferences">
+                  <div class="preference__group" *ngFor="let group of additionalGroups">
+                    <div class="preference__group-title">{{group.title}}</div>
+                    <div class="preference__group-items">
+                      <div class="preference__group-item" *ngFor="let item of group.items">
+                        <mat-checkbox [(ngModel)]="item.selected">{{item.name}}</mat-checkbox>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </perfect-scrollbar>
+            </div>
+        </div>
+        <div class="profile__parameters-actions">
+          <button class="profile__parameters-prev-button" (click)="reactOnChangeCurrentStepEvent(1)">Назад</button>
+          <button class="profile__parameters-next-button_ok profile__parameters-next-button" *ngIf="addPreferencesVisibility" (click)="saveAdditionalPreferences()">Ок</button>
+          <button class="profile__parameters-next-button" (click)="reactOnChangeCurrentStepEvent(3)">Дальше</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

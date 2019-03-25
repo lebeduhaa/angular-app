@@ -1,0 +1,32 @@
+.goal-card {
+  width: 260px;
+  height: 430px;
+  background-image: url('../../../../../assets/img/profile/goal-back.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 17px;
+}
+.goal-card__image {
+  margin-top: 40px;
+}
+.goal-card__title {
+  margin-top: 25px;
+  font-family: 'SFUIDisplay-Medium';
+  text-transform: uppercase;
+  font-size: 15;
+  line-height: 12px;
+}
+.goal-card__description {
+  margin-top: 15px;
+  font-family: 'SFUIDisplay-Thin';
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0 15px;
+}

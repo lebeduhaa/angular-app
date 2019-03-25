@@ -2,7 +2,7 @@ import { trigger, transition, style, group, query, animate } from '@angular/anim
 
 export const routerAnimations =
 trigger('routeAnimations', [
-  transition('About => Main, Sources => Main, Feedback => Main, Sourcecs => About, Feedback => About, Feedback => Sources', [
+  transition('About => Main, Sources => Main, Feedback => Main, Sources => About, Feedback => About, Feedback => Sources', [
     style({ position: 'relative' }),
     query(':enter, :leave', [
       style({
@@ -18,10 +18,10 @@ trigger('routeAnimations', [
     ]),
     group([
       query(':leave', [
-        animate('500ms ease-out', style({ top: '100%'}))
+        animate('300ms ease-out', style({ top: '100%'}))
       ]),
       query(':enter', [
-        animate('500ms ease-out', style({ top: '0%'}))
+        animate('300ms ease-out', style({ top: '0%'}))
       ])
     ]),
   ]),
@@ -41,10 +41,10 @@ trigger('routeAnimations', [
     ]),
     group([
       query(':leave', [
-        animate('500ms ease-out', style({ bottom: '100%'}))
+        animate('300ms ease-out', style({ bottom: '100%'}))
       ]),
       query(':enter', [
-        animate('500ms ease-out', style({ bottom: '0%'}))
+        animate('300ms ease-out', style({ bottom: '0%'}))
       ])
     ]),
   ])

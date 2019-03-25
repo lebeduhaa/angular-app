@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" appScrollNext (scrollNextEvent)="reactOnScrollNextEvent()" (scrollPrevEvent)="reactOnScrollPrevEvent()">
   <div class="main__navigation">
     <div class="main__navigation-items-wrapper">
       <div class="main__navigation-items">
@@ -17,7 +17,7 @@
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     </div>
     <div class="main__action">
-      <button>Попробовать</button>
+      <button routerLink="/profile">Попробовать</button>
     </div>
   </div>
   <div class="main__footer">
