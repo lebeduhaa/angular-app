@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { APP } from 'src/app/shared/application-constants';
 
 @Component({
   selector: 'app-profile',
@@ -9,112 +10,10 @@ export class ProfileComponent {
 
   public currentStep = 1;
   public selectedGoal = 2;
-  public ages = [15, 16, 17, 18, 19, 20, 21, 22, 23];
-  public groups = ['Первая группу', 'Работник тяжелого физического труда', 'Третья группа'];
-  public preferences = [
-    {name: 'Мясо', selected: false},
-    {name: 'Рыба', selected: false},
-    {name: 'Фрукты', selected: false},
-    {name: 'Овощи', selected: false},
-    {name: 'Зелень', selected: false},
-    {name: 'Молочное', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false},
-    {name: 'Группа', selected: false}
-  ];
-  public additionalGroups = [
-    {
-      title: 'группа 1',
-      items: [
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Мазик', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false }
-      ]
-    },
-    {
-      title: 'группа 2',
-      items: [
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Курица', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false }
-      ]
-    },
-    {
-      title: 'группа 3',
-      items: [
-        { name: 'Продукт', selected: false },
-        { name: 'Банан', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false }
-      ]
-    },
-    {
-      title: 'группа 4',
-      items: [
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false }
-      ]
-    },
-    {
-      title: 'группа 5',
-      items: [
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false }
-      ]
-    },
-    {
-      title: 'группа 6',
-      items: [
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false },
-        { name: 'Продукт', selected: false }
-      ]
-    }
-  ];
+  public ages = APP.ages;
+  public groups = APP.groups;
+  public preferences = APP.preferences;
+  public additionalGroups = APP.additionalGroups;
   public addPreferencesVisibility = false;
   public scrollHeight: number;
 

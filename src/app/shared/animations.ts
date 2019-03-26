@@ -49,3 +49,21 @@ trigger('routeAnimations', [
     ]),
   ])
 ]);
+
+export const showHide =
+trigger('showHide', [
+  transition(':enter', [
+    style({
+      transform: 'translateX(-150%)',
+      position: 'absolute',
+      top: '50px',
+      left: '0'
+    }),
+    animate('300ms ease-in-out', style({transform: 'translateX(0)'}))
+  ]),
+  transition(':leave', [
+    style({transform: 'translateX(-50%)'}),
+    animate('300ms ease-in-out', style({transform: 'translateX(150%)'}))
+  ]),
+]);
+

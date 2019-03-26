@@ -1,4 +1,4 @@
-<div class="main" appScrollNext (scrollNextEvent)="reactOnScrollNextEvent()" (scrollPrevEvent)="reactOnScrollPrevEvent()">
+<div class="main" appScrollNext (scrollNextEvent)="reactOnScrollNextEvent()">
   <div class="main__navigation">
     <div class="main__navigation-items-wrapper">
       <div class="main__navigation-items">
@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="main__footer">
-    <button class="main__more"></button>
+    <button class="main__more" (click)="reactOnScrollNextEvent()"></button>
     <div class="main__footer-description">подробнее</div>
   </div>
   <div class="main__plate">

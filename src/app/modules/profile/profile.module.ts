@@ -9,6 +9,8 @@ import { ProfileNavigationComponent } from './component/profile-navigation/profi
 import { GoalCardComponent } from './component/goal-card/goal-card.component';
 import { DirectivesModule } from 'src/app/directives/directives.module';
 import { MaterialModule } from 'src/app/shared/material.module';
+import { CombinationsComponent } from './component/combinations/combinations.component';
+import { CombinationCardComponent } from './component/combinations/combination-card/combination-card.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -25,7 +27,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   declarations: [
     ProfileComponent,
     ProfileNavigationComponent,
-    GoalCardComponent
+    GoalCardComponent,
+    CombinationsComponent,
+    CombinationCardComponent
   ],
   providers: [
     {

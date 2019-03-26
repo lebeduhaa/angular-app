@@ -23,6 +23,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('../../../../assets/img/profile/goal-back.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .profile__goal-card:last-child {
   margin-right: 0;

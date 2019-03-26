@@ -1,0 +1,64 @@
+.combinations {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: relative;
+}
+.combinations__first {
+  display: flex;
+  justify-content: center;
+}
+.combinations__card {
+  margin-right: 50px;
+  cursor: pointer;
+}
+.combinations__card:last-child {
+  margin-right: 0;
+}
+.combinations__navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.combinations__navigation-item {
+  width: 45px;
+  height: 5px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.combinations__navigation-item:last-child {
+  margin-right: 0;
+}
+.combinations__navigation-item_active {
+  background-color: #4a545c;
+}
+.combinations__cards {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.combinations__prev {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+.combinations__next {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+}
+.combinations__prev button, .combinations__next button {
+  height: 45px;
+  width: 45px;
+}
+.combinations__prev .mat-icon, .combinations__next .mat-icon {
+  font-size: 30px;
+}
+.combinations__prev .mat-icon {
+  margin-right: -4px;
+}
+.combinations__next .mat-icon {
+  margin-left: -4px;
+}

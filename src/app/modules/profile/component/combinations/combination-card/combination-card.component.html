@@ -1,0 +1,40 @@
+<div appHoverScale class="card" [ngStyle]="{'background-image': getBackground()}">
+  <div class="card__title">{{title}}</div>
+  <div class="card__description">Коэфициент полезных веществ:</div>
+  <div class="card__coefficient">{{coefficient}}%</div>
+  <div class="card__calories">
+    <div class="card__parameters">
+      <div class="card__parameters-title">Калории</div>
+      <div class="card__parameters-value">{{calories}} кКал</div>
+      <div class="card__parameters-progress-bar">
+        <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card__additional">
+    <div class="card__parameters">
+      <div class="card__parameters-title">Белки</div>
+      <div class="card__parameters-value">{{proteins}} г</div>
+      <div class="card__parameters-progress-bar">
+        <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
+      </div>
+    </div>
+    <div class="card__parameters">
+      <div class="card__parameters-title">Жиры</div>
+      <div class="card__parameters-value">{{fats}} г</div>
+      <div class="card__parameters-progress-bar">
+        <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
+      </div>
+    </div>
+    <div class="card__parameters">
+      <div class="card__parameters-title">Углеводы</div>
+      <div class="card__parameters-value">{{carbohydrates}} г</div>
+      <div class="card__parameters-progress-bar">
+        <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card__components">
+    <div class="card__component" *ngFor="let component of components">{{component}}</div>
+  </div>
+</div>

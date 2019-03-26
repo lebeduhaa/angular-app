@@ -137,6 +137,9 @@
           <button class="profile__parameters-next-button" (click)="reactOnChangeCurrentStepEvent(3)">Дальше</button>
         </div>
       </div>
+      <div class="profile__combinations" *ngIf="currentStep === 3">
+        <app-combinations></app-combinations>
+      </div>
     </div>
   </div>
 </div>
