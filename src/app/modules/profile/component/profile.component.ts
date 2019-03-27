@@ -16,6 +16,12 @@ export class ProfileComponent {
   public additionalGroups = APP.additionalGroups;
   public addPreferencesVisibility = false;
   public scrollHeight: number;
+  public male: string;
+  public age: number;
+  public height: number;
+  public weight: number;
+  public group: string;
+  public pregnancy: string;
 
   public closeAdditionalPreferences(): void {
     this.additionalGroups = this.additionalGroups.map(group => {

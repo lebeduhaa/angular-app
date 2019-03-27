@@ -62,3 +62,12 @@
 .combinations__next .mat-icon {
   margin-left: -4px;
 }
+
+@media screen and (max-width: 1550px) {
+  .combinations {
+    margin-top: 20px;
+  }
+  .combinations__navigation {
+    margin-top: 0;
+  }
+}

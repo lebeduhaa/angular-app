@@ -95,3 +95,10 @@
   border-right: 1px solid white;
   padding: 0 30px;
 }
+
+@media screen and (max-width: 1550px) {
+  .feedback__control input {
+    width: 600px;
+    height: 55px;
+  }
+}

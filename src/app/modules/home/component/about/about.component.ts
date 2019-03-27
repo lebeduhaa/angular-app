@@ -19,7 +19,7 @@ export class AboutComponent {
   }
 
   public reactOnScrollNextEvent(): void {
-    this.routerHelper.navigateToPage(APP.pages.sources);
+    this.routerHelper.navigateToPage(APP.pages.feedback);
   }
 
 }

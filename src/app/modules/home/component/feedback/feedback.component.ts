@@ -14,7 +14,7 @@ export class FeedbackComponent {
   ) {}
 
   public reactOnScrollPrevEvent(): void {
-    this.routerHelper.navigateToPage(APP.pages.sources);
+    this.routerHelper.navigateToPage(APP.pages.about);
   }
 
 }

@@ -246,3 +246,30 @@ button .mat-icon {
 .profile__additional-preferences-close .mat-icon:hover {
   text-shadow: 0 0 1px black;
 }
+
+@media screen and (max-width: 1550px) {
+  .profile__wrapper {
+    padding-top: 60px;
+  }
+  .profile__goal-cards {
+    margin-top: 60px;
+  }
+  .profile__goal-action {
+    margin-top: 50px;
+  }
+  .profile__personal-data {
+    padding: 20px 80px;
+  }
+  .profile__personal-data-value2 {
+    margin-bottom: 10px;
+  }
+  .profile__preferences {
+    padding-top: 0;
+  }
+  .profile__preferences-item {
+    margin-top: 20px;
+  }
+  .combinations {
+    margin-top: 0px !important;
+  }
+}

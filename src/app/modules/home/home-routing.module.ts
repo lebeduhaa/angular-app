@@ -3,7 +3,6 @@ import { RouterModule } from '@angular/router';
 
 import { MainComponent } from './component/main/main.component';
 import { AboutComponent } from './component/about/about.component';
-import { SourcesComponent } from './component/sources/sources.component';
 import { FeedbackComponent } from './component/feedback/feedback.component';
 import { HomeComponent } from './component/home.component';
 
@@ -16,7 +15,6 @@ import { HomeComponent } from './component/home.component';
         children: [
           { path: 'main', component: MainComponent, data: {animation: 'Main'} },
           { path: 'about', component: AboutComponent, data: {animation: 'About'} },
-          { path: 'sources', component: SourcesComponent, data: {animation: 'Sources'} },
           { path: 'feedback', component: FeedbackComponent, data: {animation: 'Feedback'} }
         ]
       }
