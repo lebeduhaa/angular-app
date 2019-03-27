@@ -27,10 +27,9 @@
   z-index: 1;
 }
 .main__navigation-items {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
   color: white;
   text-transform: uppercase;
   font-family: 'SFUIDisplay-Medium';
@@ -39,17 +38,22 @@
   outline: none;
   cursor: pointer;
 }
+.main__navigation-item {
+  margin-left: 70px;
+}
+.main__navigation-item:first-child {
+  margin-left: 170px;
+}
 .main__navigation-items-wrapper {
-  width: 50%;
+  width: 100%;
   margin-top: 90px;
 }
 .main__content {
-  width: 36%;
-  margin: 0 auto;
   text-align: center;
   z-index: 2;
 }
 .main__title {
+  width: 850px;
   font-size: 52px;
   line-height: 60px;
   font-family: 'SFUIDisplay-Medium';

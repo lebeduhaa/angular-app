@@ -17,7 +17,7 @@ export class CombinationCardComponent {
   @Input() image: string;
 
   public getBackground(): any {
-    return `url('../../../../../../assets/img/cards/${this.image}')`;
+    return `url('assets/img/cards/${this.image}')`;
   }
 
 }

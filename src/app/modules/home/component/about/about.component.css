@@ -23,6 +23,21 @@
 }
 .about__images-main {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.about__images-main img {
+  width: 100%;
+}
+.about__images-additional {
+  display: flex;
+}
+.about__image-additional {
+  /* flex-basis: 33.3%; */
+  height: 260px;
+}
+.about__image-additional img {
+  width: 100%;
 }
 .about__information-title-back {
   font-family: 'SFUIText-Heavy';

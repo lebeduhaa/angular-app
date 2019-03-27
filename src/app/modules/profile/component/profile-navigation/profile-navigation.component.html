@@ -6,7 +6,7 @@
         [class.navigation__item_active]="fillGoals()"
         (click)="changeCurrentStep(1)"
       >
-        <img src="../../../../../assets/img/profile/goal.png">
+        <img src="assets/img/profile/goal.png">
         Ваша цель
         <div class="navigation__item-arrow"></div>
         <div class="navigation__separator"></div>
@@ -16,7 +16,7 @@
         [class.navigation__item_active]="fillParameters()"
         (click)="changeCurrentStep(2)"
       >
-        <img src="../../../../../assets/img/profile/parameters.png">
+        <img src="assets/img/profile/parameters.png">
         Параметры
         <div class="navigation__item-arrow" [ngStyle]="{'background-color': fillParameters() ? '#f0f0f0' : 'white'}"></div>
         <div class="navigation__separator" [ngStyle]="{'background-color': fillParameters() ? 'white' : '#f0f0f0'}"></div>
@@ -25,7 +25,7 @@
         class="navigation__item"
         [class.navigation__item_active]="fillCombinations()"
         (click)="changeCurrentStep(3)"
-      ><img src="../../../../../assets/img/profile/combinations.png">Комбинации</div>
+      ><img src="assets/img/profile/combinations.png">Комбинации</div>
     </div>
   </div>
 </div>

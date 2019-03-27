@@ -36,8 +36,17 @@
   font-size: 10px;
   color: white;
   background-image: url('../../../../../../assets/img/cards/callories.png');
-  padding: 5px 0 5px 15px;
+  padding: 5px 0 5px 20px;
   background-repeat: no-repeat;
+}
+.card__parameters-title_proteines {
+  background-image: url('../../../../../../assets/img/cards/proteines.png');
+}
+.card__parameters-title_fats {
+  background-image: url('../../../../../../assets/img/cards/fats.png');
+}
+.card__parameters-title_carbohydrates {
+  background-image: url('../../../../../../assets/img/cards/carbohydrates.png');
 }
 .card__parameters-value {
   font-size: 10px;
