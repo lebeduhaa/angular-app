@@ -249,10 +249,10 @@ button .mat-icon {
 
 @media screen and (max-width: 1550px) {
   .profile__wrapper {
-    padding-top: 60px;
+    padding-top: 20px;
   }
   .profile__goal-cards {
-    margin-top: 60px;
+    margin-top: 35px;
   }
   .profile__goal-action {
     margin-top: 50px;
@@ -271,5 +271,11 @@ button .mat-icon {
   }
   .combinations {
     margin-top: 0px !important;
+  }
+  .profile__parameters-content {
+    margin-top: 20px;
+  }
+  .profile__parameters-actions {
+    margin-top: 15px;
   }
 }

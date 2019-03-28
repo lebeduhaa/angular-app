@@ -1,0 +1,8 @@
+.combinations {
+  height: 100%;
+  display: flex;
+}
+.combinations__side-bar {
+  flex-basis: 20%;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.158);
+}

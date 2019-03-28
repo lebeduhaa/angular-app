@@ -4,14 +4,14 @@ import { APP } from 'src/app/shared/application-constants';
 import { showHide } from 'src/app/shared/animations';
 
 @Component({
-  selector: 'app-combinations',
+  selector: 'app-profile-combinations',
   templateUrl: 'combinations.component.html',
   styleUrls: ['combinations.component.css'],
   animations: [
     showHide
   ]
 })
-export class CombinationsComponent {
+export class ProfileCombinationsComponent {
 
   public currentNav = 1;
   public firstStepCards = APP.firstStepCards;

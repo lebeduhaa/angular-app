@@ -101,4 +101,7 @@
     width: 600px;
     height: 55px;
   }
+  .feedback__form {
+    padding: 25px;
+  }
 }

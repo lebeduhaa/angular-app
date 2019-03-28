@@ -14,7 +14,7 @@
             (click)="changeGoal(1)"
           >
             <app-goal-card
-              [image]="'first-card.png'"
+              [image]="selectedGoal === 1 ? 'first-card-active.png' : 'first-card.png'"
               [title]="'похудеть'"
               [description]="'Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.'"
             ></app-goal-card>
@@ -27,7 +27,7 @@
             (click)="changeGoal(2)"
           >
             <app-goal-card
-              [image]="'second-card.png'"
+              [image]="selectedGoal === 2 ? 'second-card-active.png' : 'second-card.png'"
               [title]="'баланс'"
               [description]="'Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.'"
             ></app-goal-card>
@@ -40,7 +40,7 @@
             (click)="changeGoal(3)"
           >
             <app-goal-card
-              [image]="'third-card.png'"
+              [image]="selectedGoal === 3 ? 'third-card-active.png' : 'third-card.png'"
               [title]="'набрать'"
               [description]="'Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.'"
             ></app-goal-card>
@@ -138,7 +138,7 @@
         </div>
       </div>
       <div class="profile__combinations" *ngIf="currentStep === 3">
-        <app-combinations></app-combinations>
+        <app-profile-combinations></app-profile-combinations>
       </div>
     </div>
   </div>

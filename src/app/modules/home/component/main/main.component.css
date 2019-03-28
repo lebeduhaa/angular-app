@@ -131,3 +131,17 @@
 .main__more:active {
   box-shadow: inset 0 0 25px rgba(128, 128, 128, 0.315);
 }
+
+@media screen and (max-width: 1550px) {
+  .main__title {
+    font-size: 45px;
+  }
+  .main__action button {
+    width: 190px;
+    height: 50px;
+  }
+  .main__more {
+    height: 65px;
+    width: 65px;
+  }
+}

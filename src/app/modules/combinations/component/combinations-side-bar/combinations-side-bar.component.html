@@ -1,0 +1,17 @@
+<div class="side-bar">
+  <div class="side-bar__header" [ngStyle]="{'background-image': getImage()}">
+    <div class="side-bar__header-wrapper">
+      <div class="side-bar__header-prev">
+        <button [disabled]="goPrevDisabled()" (click)="decCombination()" mat-icon-button>
+          <mat-icon>arrow_back_ios</mat-icon>
+        </button>
+      </div>
+      <div class="side-bar__header-title">комбинация {{currentCombination}}</div>
+      <div class="side-bar__header-next">
+        <button [disabled]="goNextDisabled()" (click)="incCombination()" mat-icon-button>
+          <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
