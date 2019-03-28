@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { APP } from 'src/app/shared/application-constants';
 
 @Component({
   selector: 'app-combinations-side-bar',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 export class CombinationsSideBarComponent {
 
   public currentCombination = 1;
+  public combinationImtes = APP.combinationImtes;
+  public selectedItem: string;
 
   public getImage(): string {
     return `url('assets/img/combinations/${this.currentCombination}.png')`;
@@ -27,6 +30,16 @@ export class CombinationsSideBarComponent {
 
   public incCombination(): void {
     this.currentCombination++;
+  }
+
+  public selectItem(item: string): void {
+    this.selectedItem = item;
+  }
+
+  public getMenuClass(item: string): any {
+    return {
+      [`side-bar__group-item_active-${this.currentCombination}`]: item === this.selectedItem
+    };
   }
 
 }

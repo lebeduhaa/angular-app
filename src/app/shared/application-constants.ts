@@ -358,6 +358,11 @@ export const APP = {
         { name: 'Продукт', selected: false }
       ]
     }
+  ],
+  combinationImtes: [
+    { title: 'мясо', items: ['Курица', 'Свинина'] },
+    { title: 'Овощи', items: ['Помидоры', 'Огурцы', 'Чеснок'] },
+    { title: 'Зелень', items: ['Укроп', 'Кинза', 'Базилик'] },
+    { title: 'Фрукты', items: ['Лимон', 'Яблоко'] }
   ]
-
 };

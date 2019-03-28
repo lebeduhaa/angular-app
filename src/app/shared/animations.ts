@@ -18,10 +18,10 @@ trigger('routeAnimations', [
     ]),
     group([
       query(':leave', [
-        animate('300ms ease-out', style({ top: '100%'}))
+        animate('800ms ease-out', style({ top: '100%'}))
       ]),
       query(':enter', [
-        animate('300ms ease-out', style({ top: '0%'}))
+        animate('800ms ease-out', style({ top: '0%'}))
       ])
     ]),
   ]),
@@ -41,10 +41,10 @@ trigger('routeAnimations', [
     ]),
     group([
       query(':leave', [
-        animate('300ms ease-out', style({ bottom: '100%'}))
+        animate('800ms ease-out', style({ bottom: '100%'}))
       ]),
       query(':enter', [
-        animate('300ms ease-out', style({ bottom: '0%'}))
+        animate('800ms ease-out', style({ bottom: '0%'}))
       ])
     ]),
   ])

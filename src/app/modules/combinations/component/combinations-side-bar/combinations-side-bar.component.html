@@ -14,4 +14,16 @@
       </div>
     </div>
   </div>
+  <div class="side-bar__content">
+    <div class="side-bar__group" *ngFor="let group of combinationImtes">
+      <div class="side-bar__group-title">{{group.title}}</div>
+      <div class="side-bar__group-items" *ngFor="let item of group.items">
+        <div
+          class="side-bar__group-item"
+          [ngClass]="getMenuClass(item)"
+          (click)="selectItem(item)"
+        >{{item}}</div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -6,7 +6,7 @@
   height: 150px;
   border-bottom: 1px solid #e1e1e1;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   display: flex;
   font-family: 'SFUIDisplay-Medium';
   font-size: 15px;
@@ -30,4 +30,47 @@
 }
 .side-bar__header-prev .mat-icon {
   margin-right: -6px;
+}
+.side-bar__group-title {
+  font-family: 'SFUIDisplay-Medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 7px 0 7px 40px;
+  margin-top: 15px;
+}
+.side-bar__group-item {
+  font-family: 'SFUIDisplay-Light';
+  font-size: 13px;
+  padding: 7px 0 7px 40px;
+  cursor: pointer;
+}
+.side-bar__group-item_active-1 {
+  border-right: 3px solid #f9e607;
+}
+.side-bar__group-item_active-2 {
+  border-right: 3px solid #73c6fc;
+}
+.side-bar__group-item_active-3 {
+  border-right: 3px solid #d63353;
+}
+.side-bar__group-item_active-4 {
+  border-right: 3px solid #fa8f09;
+}
+.side-bar__group-item_active-5 {
+  border-right: 3px solid #6c73fb;
+}
+.side-bar__group-item_active-6 {
+  border-right: 3px solid #a632d3;
+}
+.side-bar__group-item_active-7 {
+  border-right: 3px solid #f66716;
+}
+.side-bar__group-item_active-8 {
+  border-right: 3px solid #b86bfb;
+}
+.side-bar__group-item_active-9 {
+  border-right: 3px solid #d33297;
+}
+div[class*="side-bar__group-item_active"] {
+  box-shadow: inset 0 0 20px rgba(128, 128, 128, 0.23);
 }

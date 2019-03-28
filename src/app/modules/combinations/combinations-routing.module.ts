@@ -8,6 +8,9 @@ import { CombinationsComponent } from './component/combinations.component';
     RouterModule.forChild([
       { path: 'combinations', component: CombinationsComponent }
     ])
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class CombinationsRoutingModule {}

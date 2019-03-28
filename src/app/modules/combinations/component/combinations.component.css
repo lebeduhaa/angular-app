@@ -1,8 +1,127 @@
 .combinations {
   height: 100%;
   display: flex;
+  background-image: url('../../../../assets/img/combinations/combinations-back.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .combinations__side-bar {
   flex-basis: 20%;
-  box-shadow: 0 0 20px rgba(128, 128, 128, 0.158);
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.1);
+  z-index: 2;
+}
+.combinations__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.combinations__content-header {
+  flex-basis: 10%;
+  box-shadow: 0 0 20px rgba(128, 128, 128, .1);
+}
+.combinations__content-value {
+  margin: 20px;
+  flex-basiS: 90%;
+  box-sizing: border-box;
+}
+.combinations__parameters {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.combinations__parameters-item {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-basis: 20%;
+  box-sizing: border-box;
+  margin-right: 10px;
+  justify-content: center;
+}
+.combinations__parameters-item:last-child {
+  margin-right: 0;
+}
+.combinations__item_image {
+  font-family: 'Proxima-Nova-Extra-Condensed-Regular';
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 25px;
+}
+.combinations__parameters-item_proteines .combinations__item_image {
+  background-image: url('../../../../assets/img/combinations/cmb-proteines.png');
+}
+.combinations__parameters-item_fats .combinations__item_image {
+  background-image: url('../../../../assets/img/combinations/cmb-fats.png');
+}
+.combinations__parameters-item_colbr .combinations__item_image {
+  background-image: url('../../../../assets/img/combinations/cmb-colobr.png');
+}
+.combinations__parameters-item_water .combinations__item_image {
+  background-image: url('../../../../assets/img/combinations/cmb-water.png');
+}
+.combinations__parameters-item_zola .combinations__item_image {
+  background-image: url('../../../../assets/img/combinations/cmb-zola.png');
+}
+.combinations__item-description {
+  font-family: 'SFUIDisplay-Light';
+  font-size: 31px;
+}
+.combinations__item-title {
+  font-family: 'Proxima-Nova-Condensed-Light';
+  font-size: 17px;
+}
+.combinations__info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.combinations__info-left {
+  flex-basis: 25%;
+}
+.combinations__calories {
+  background-color: #fff;
+  padding: 10px;
+}
+.combinations__calories-title {
+  font-family: 'SFUIDisplay-Regular';
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.combinations__calories-value {
+  font-size: 23px;
+  font-family: 'Roboto Condensed';
+  background-image: url('../../../../assets/img/combinations/calor.png');
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.combinations__coeficient {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.combinations__human {
+  margin-top: 18px;
+  height: 210px;
+  background-image: url('../../../../assets/img/combinations/human.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Proxima-Nova-Extra-Condensed-Regular';
+  font-size: 24px;
+  box-sizing: border-box;
 }
