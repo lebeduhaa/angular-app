@@ -6,9 +6,9 @@ import { CombinationsComponent } from './component/combinations.component';
 import { CombinationsSideBarComponent } from './component/combinations-side-bar/combinations-side-bar.component';
 import { MaterialModule } from 'src/app/shared/material.module';
 import { CombinationsHeaderComponent } from './component/combinations-header/combinations-header.component';
-import { InfoComponent } from './component/info/info.component';
 import { OwnCombinationComponent } from './component/own-combination/own-combination.component';
 import { AboutCombinationComponent } from './component/about-combination/about-combination.component';
+import { InfoComponent } from './component/about-combination/info/info.component';
 
 @NgModule({
   imports: [

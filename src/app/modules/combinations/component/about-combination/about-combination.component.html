@@ -1,1 +1,80 @@
-about
+<div class="combinations__parameters">
+    <div class="combinations__parameters-item combinations__parameters-item_proteines">
+      <div class="combinations__item_image">
+        8%
+      </div>
+      <div class="combinations__item-value">
+        <div class="combinations__item-title">Белки:</div>
+        <div class="combinations__item-description">5.9г</div>
+      </div>
+    </div>
+    <div class="combinations__parameters-item combinations__parameters-item_fats">
+      <div class="combinations__item_image">
+        38%
+      </div>
+      <div class="combinations__item-value">
+        <div class="combinations__item-title">Жиры:</div>
+        <div class="combinations__item-description">32г</div>
+      </div>
+    </div>
+    <div class="combinations__parameters-item combinations__parameters-item_colbr">
+      <div class="combinations__item_image">
+        8%
+      </div>
+      <div class="combinations__item-value">
+        <div class="combinations__item-title">Углеводы:</div>
+        <div class="combinations__item-description">59г</div>
+      </div>
+    </div>
+    <div class="combinations__parameters-item combinations__parameters-item_water">
+      <div class="combinations__item_image">
+        8%
+      </div>
+      <div class="combinations__item-value">
+        <div class="combinations__item-title">Вода:</div>
+        <div class="combinations__item-description">74г</div>
+      </div>
+    </div>
+    <div class="combinations__parameters-item combinations__parameters-item_zola">
+      <div class="combinations__item_image">
+        8%
+      </div>
+      <div class="combinations__item-value">
+        <div class="combinations__item-title">Зола:</div>
+        <div class="combinations__item-description">1.1г</div>
+      </div>
+    </div>
+  </div>
+  <div class="combinations__info">
+    <div class="combinations__info-left">
+      <div class="combinations__calories">
+        <div class="combinations__calories-title">калории</div>
+        <div class="combinations__calories-value">
+          3400
+        </div>
+      </div>
+      <div class="combinations__coeficient">
+        <div class="combinations__calories-title">коэф. полезных веществ</div>
+        <div class="combinations__human">48%</div>
+      </div>
+    </div>
+    <div class="combinations__info-right">
+      <div class="combinations__info-parameters">
+        <div class="combinations__info-parameters-item">сахар - 59,0г</div>
+        <div class="combinations__info-parameters-item">клетчатка - 0.2г</div>
+        <div class="combinations__info-parameters-item">крахмал - 0.2г</div>
+        <div class="combinations__info-parameters-item">холестерин - 21.0мг</div>
+        <div class="combinations__info-parameters-item">трансжиры - 0.1г</div>
+      </div>
+      <div class="combinations__info-additional">
+        <div class="additional__header">
+          <div class="additional__header-item" [class.additional__header-item_active]="vitaminsActive" [routerLink]="'/combinations/about/' + currentCombination + '/vitamins'">витмины</div>
+          <div class="additional__header-item" [class.additional__header-item_active]="mineralsActive" [routerLink]="'/combinations/about/' + currentCombination + '/minerals'">минералы</div>
+          <div class="additional__header-item" [class.additional__header-item_active]="acidsActive" [routerLink]="'/combinations/about/' + currentCombination + '/amino-acids'">аминокислоты</div>
+        </div>
+        <div class="additional__content">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
