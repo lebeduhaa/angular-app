@@ -1,7 +1,9 @@
 .combinations__parameters {
-  margin-bottom: 10px;
+  margin-bottom: 19px;
   display: flex;
   justify-content: space-between;
+  height: 125px;
+  box-sizing: border-box;
 }
 .combinations__parameters-item {
   background-color: #fff;
@@ -10,9 +12,10 @@
   align-items: center;
   flex-basis: 20%;
   box-sizing: border-box;
-  margin-right: 10px;
+  margin-right: 25px;
   justify-content: center;
   border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
 }
 .combinations__parameters-item:last-child {
   margin-right: 0;
@@ -62,8 +65,11 @@
 }
 .combinations__calories {
   background-color: #fff;
-  padding: 10px;
+  padding: 25px;
+  box-sizing: border-box;
   border-radius: 4px;
+  height: 215px;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
 }
 .combinations__calories-title {
   font-family: 'SFUIDisplay-Regular';
@@ -75,47 +81,52 @@
   font-size: 23px;
   font-family: 'Roboto Condensed';
   background-image: url('../../../../../assets/img/combinations/calor.png');
-  height: 130px;
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90%;
 }
 .combinations__coeficient {
-  padding: 10px;
+  padding: 25px;
+  box-sizing: border-box;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 4px;
+  height: 435px;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
 }
 .combinations__human {
-  margin-top: 18px;
-  height: 210px;
+  height: 78%;
+  margin-top: 50px;
   background-image: url('../../../../../assets/img/combinations/human.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto 100%;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 110px;
+  font-size: 30px;
   font-family: 'Proxima-Nova-Extra-Condensed-Regular';
-  font-size: 24px;
   box-sizing: border-box;
 }
 .combinations__info-parameters {
-  height: 50px;
+  height: 75px;
   display: flex;
   align-items: center;
   background-color: #fff;
   border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
 }
 .combinations__info-parameters-item {
-  font-family: 'SFUIDisplay-Regular';
-  font-size: 13px;
+  font-family: 'SFUIDisplay-.combinations__parameters[_ngcontent-c6]Regular';
+  font-size: 15px;
   flex-basis: 20%;
   box-sizing: border-box;
   text-align: center;
   border-right: 1px solid #e1e1e1;
+  padding: 10px 0;
 }
 .combinations__info-parameters-item:last-child {
   border-right: none;
@@ -123,10 +134,10 @@
 .combinations__info-right {
   flex-basis: 75%;
   box-sizing: border-box;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .combinations__info-additional {
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
@@ -142,6 +153,9 @@
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .additional__header-item:last-child {
   border-right: none;
@@ -150,11 +164,58 @@
   display: flex;
   border-bottom: 1px solid #e1e1e1;
   overflow: hidden;
+  height: 50px;
 }
 .additional__header-item_active {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+@media screen and (max-width: 1550px) {
+  .combinations__parameters {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .combinations__parameters-item {
+    margin-right: 10px;
+  }
+  .combinations__calories {
+    height: auto;
+    box-sizing: content-box;
+    padding: 10px;
+  }
+  .combinations__calories {
+    height: auto;
+  }
+  .combinations__calories-value {
+    height: 130px;
+  }
+  .combinations__coeficient {
+    height: auto;
+    padding: 10px;
+    box-sizing: content-box;
+    margin-top: 10px;
+  }
+  .combinations__human {
+    height: 210px;
+    margin-top: 18px;
+    padding-top: 60px;
+    font-size: 24px;
+  }
+  .combinations__info-parameters {
+    height: 50px;
+  }
+  .combinations__info-parameters-item {
+    font-size: 15px;
+    padding: 0;
+  }
+  .additional__header {
+    height: auto;
+  }
+  .combinations__info-right {
+    margin-left: 10px;
+  }
+  .combinations__info-additional {
+    margin-top: 10px;
+  }
 }

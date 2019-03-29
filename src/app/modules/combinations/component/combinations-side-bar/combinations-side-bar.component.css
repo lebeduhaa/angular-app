@@ -6,7 +6,6 @@
   height: 150px;
   border-bottom: 1px solid #e1e1e1;
   background-repeat: no-repeat;
-  background-size: auto 100%;
   display: flex;
   font-family: 'SFUIDisplay-Medium';
   font-size: 15px;
@@ -33,14 +32,17 @@
 }
 .side-bar__group-title {
   font-family: 'SFUIDisplay-Medium';
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 7px 0 7px 40px;
   margin-top: 15px;
 }
+.side-bar__content {
+  margin-top: 60px;
+}
 .side-bar__group-item {
   font-family: 'SFUIDisplay-Light';
-  font-size: 13px;
+  font-size: 16px;
   padding: 7px 0 7px 40px;
   cursor: pointer;
 }
@@ -76,4 +78,53 @@
 }
 div[class*="side-bar__group-item_active"] {
   box-shadow: inset 0 0 20px rgba(128, 128, 128, 0.23);
+}
+.side-bar__culc {
+  margin-top: 40px;
+  text-align: center;
+}
+.side-bar__culc-button {
+  border: none;
+  background-color: transparent;
+  width: 160px;
+  height: 50px;
+  font-size: 16px;
+  font-family: 'SFUIDisplay-Regular';
+  background-image: url('../../../../../assets/img/button.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  outline: none;
+  border-radius: 4px;
+}
+.side-bar__culc-button:hover {
+  box-shadow: 0 0 7px rgba(128, 128, 128, 0.521);
+}
+.side-bar__culc-button:active {
+  box-shadow: inset 0 0 5px white;
+}
+
+@media screen and (max-width: 1550px) {
+  .combinations__side-bar {
+    background-size: auto 100%;
+  }
+  .side-bar__content {
+    margin-top: 0;
+  }
+  .side-bar__group-title {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .side-bar__group-item {
+    font-size: 13px;
+  }
+  .side-bar__culc-button {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  .side-bar__culc {
+    margin-top: 0;
+  }
 }

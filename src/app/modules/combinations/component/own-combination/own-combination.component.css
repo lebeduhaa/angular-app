@@ -1,26 +1,93 @@
-/* .combinations {
+.own__filter {
+  width: 840px;
+  margin: 40px auto 0 auto;
+  position: relative;
+}
+.own__filter input {
+  width: 100%;
+  border: 12px solid white;
+  height: 70px;
+  background-color: #f2f3f6;
+  box-sizing: border-box;
+  border-radius: 36px;
+  padding: 20px 30px;
+  font-size: 15px;
+  font-family: 'SFUIDisplay-Thin';
+  outline: none;
+}
+.mat-icon {
+  position: absolute;
+  right: 23px;
+  top: 23px;
+  color: #c6c6c6;
+}
+.own__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 50px 0 50px;
+}
+.own__content-item-wrapper {
+  height: 116px;
+  flex-basis: 20%;
+  box-sizing: border-box;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+.own__content-item {
+  background-color: #fff;
   height: 100%;
   display: flex;
-  background-image: url('../../../../assets/img/combinations/combinations-back.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 15px;
+  position: relative;
 }
-.combinations__side-bar {
-  flex-basis: 20%;
-  box-shadow: 0 0 20px rgba(128, 128, 128, 0.1);
-  z-index: 2;
+.own__content-item-wrapper:nth-child(-n + 5) {
+  margin-top: 0;
 }
-.combinations__content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.own__content-item-info {
+  margin-left: 5px;
 }
-.combinations__content-header {
-  flex-basis: 10%;
-  box-shadow: 0 0 20px rgba(128, 128, 128, .1);
+.own__content-item-title {
+  font-family: 'SFUIDisplay-Regular';
+  text-transform: capitalize;
 }
-.combinations__content-value {
-  margin: 20px;
-  flex-basiS: 90%;
-  box-sizing: border-box;
-} */
+.own__content-item-mass {
+  margin-top: 10px;
+  font-family: 'SFUIDisplay-Thin';
+}
+.own__content-item-checkbox {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+@media screen and (max-width: 1550px) {
+  .own__filter {
+    margin-top: 0;
+    width: 550px;
+  }
+  .own__content {
+    margin: 20px 0 0 0;
+  }
+  .own__content-item-wrapper {
+    padding-right: 15px;
+    margin-top: 10px;
+    height: 90px;
+  }
+  .own__content-item-image {
+    width: 40%;
+  }
+  .own__content-item-image img {
+    width: 100%;
+  }
+  .own__content-item {
+    font-size: 13px;
+  }
+  .own__content-item-mass {
+    margin-top: 5px;
+  }
+  .own__content-item {
+    padding-left: 5px;
+  }
+}

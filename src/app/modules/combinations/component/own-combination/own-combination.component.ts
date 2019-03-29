@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { APP } from 'src/app/shared/application-constants';
 
 @Component({
   selector: 'app-own-combination',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['own-combination.component.css']
 })
 export class OwnCombinationComponent {
+
+  public products = APP.products;
 
 }

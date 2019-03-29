@@ -43,3 +43,10 @@ body, html {
 .ps .ps__rail-x:hover, .ps .ps__rail-y:hover, .ps .ps__rail-x:focus, .ps .ps__rail-y:focus, .ps .ps__rail-x.ps--clicking, .ps .ps__rail-y.ps--clicking {
   background-color: transparent !important;
 }
+
+@media screen and (max-width: 1550px) {
+  .own__content-item-checkbox .mat-checkbox-inner-container {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

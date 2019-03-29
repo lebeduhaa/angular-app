@@ -406,5 +406,28 @@ export const APP = {
     { title: 'Метионин', content: '0.5мг', share: 6, procent: 1.5, water: false },
     { title: 'Цистин', content: '0.5мг', share: 10, procent: 1.5, water: false },
     { title: 'Феналанин', content: '0.5мг', share: 3, procent: 1.5, water: false }
+  ],
+  products: [
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' }
+
   ]
 };

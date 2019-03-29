@@ -1,1 +1,23 @@
-own combination
+<div class="own">
+  <div class="own__filter">
+    <div class="own__filter-content">
+      <input type="text" placeholder="Поиск..."><mat-icon>search</mat-icon>
+    </div>
+  </div>
+  <div class="own__content">
+    <div class="own__content-item-wrapper" *ngFor="let product of products">
+      <div class="own__content-item">
+        <div class="own__content-item-image">
+          <img src="assets/img/combinations/banana.png" alt="">
+        </div>
+        <div class="own__content-item-info">
+          <div class="own__content-item-title">{{product.title}}</div>
+          <div class="own__content-item-mass">{{product.mass}}г</div>
+        </div>
+        <div class="own__content-item-checkbox">
+          <mat-checkbox [(ngModel)]="product.selected"></mat-checkbox>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

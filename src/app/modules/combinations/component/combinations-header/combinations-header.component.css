@@ -12,6 +12,7 @@
   text-transform: uppercase;
   border-right: 1px solid #e1e1e1;
   outline: none;
+  cursor: pointer;
 }
 .header__item:first-child {
   margin-left: 30px;

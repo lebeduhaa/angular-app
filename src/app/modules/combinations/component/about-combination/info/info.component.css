@@ -6,7 +6,7 @@
   font-family: 'SFUIDisplay-Medium';
   font-size: 13px;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   border-right: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
 }
 .info__table-body-item>div {
   text-align: center;
-  padding: 10px 0;
+  padding: 18px 0;
   border-right: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   font-family: 'SFUIDisplay-Light';
@@ -51,7 +51,7 @@
   border-right: none !important;
 }
 .info__comment {
-  height: 25px;
+  height: 58px;
   font-family: 'SFUIDisplay-Light';
   font-size: 12px;
   display: flex;
@@ -79,4 +79,16 @@
 }
 .info__table-body-item-procent-filler_water {
   background-color: #fed27f;
+}
+
+@media screen and (max-width: 1550px) {
+  .info__table-body-item>div {
+    padding: 10px 0;
+  }
+  .info__table-head-item {
+    padding: 10px 0;
+  }
+  .info__comment {
+    height: 25px;
+  }
 }

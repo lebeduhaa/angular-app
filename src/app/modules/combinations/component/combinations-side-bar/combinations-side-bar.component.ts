@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { APP } from 'src/app/shared/application-constants';
-import { Route, ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RouterHelper } from 'src/app/shared/router.helper';
 
 @Component({
@@ -13,8 +13,6 @@ export class CombinationsSideBarComponent implements OnInit {
   public currentCombination: string;
   public combinationImtes = APP.combinationImtes;
   public selectedItem: string;
-
-  private page: string;
 
   constructor(
     private routerHelper: RouterHelper,
