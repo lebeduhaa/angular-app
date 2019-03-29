@@ -24,7 +24,8 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: 'yellow-back.png'
+      image: 'yellow-back.png',
+      link: '1'
     },
     {
       title: 'комбинация №2',
@@ -44,10 +45,11 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: 'blue-back.png'
+      image: 'blue-back.png',
+      link: '2'
     },
     {
-      title: 'комбинация №2',
+      title: 'комбинация №3',
       coefficient: 25,
       calories: 105,
       proteins: 1.09,
@@ -64,12 +66,13 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: 'red-back.png'
+      image: 'red-back.png',
+      link: '3'
     }
   ],
   secondStepCards: [
     {
-      title: 'комбинация №1',
+      title: 'комбинация №4',
       coefficient: 48,
       calories: 105,
       proteins: 1.09,
@@ -86,10 +89,11 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: '3(1).png'
+      image: '3(1).png',
+      link: '4'
     },
     {
-      title: 'комбинация №2',
+      title: 'комбинация №5',
       coefficient: 72,
       calories: 105,
       proteins: 1.09,
@@ -106,10 +110,11 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: 'purple-back.png'
+      image: 'purple-back.png',
+      link: '5'
     },
     {
-      title: 'комбинация №2',
+      title: 'комбинация №6',
       coefficient: 25,
       calories: 105,
       proteins: 1.09,
@@ -126,12 +131,13 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: 'burgundy-back.png'
+      image: 'burgundy-back.png',
+      link: '6'
     }
   ],
   thirdStepCards: [
     {
-      title: 'комбинация №1',
+      title: 'комбинация №7',
       coefficient: 48,
       calories: 105,
       proteins: 1.09,
@@ -148,10 +154,11 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: '3(1).png'
+      image: '3(1).png',
+      link: '7'
     },
     {
-      title: 'комбинация №2',
+      title: 'комбинация №8',
       coefficient: 72,
       calories: 105,
       proteins: 1.09,
@@ -168,10 +175,11 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: '3(2).png'
+      image: '3(2).png',
+      link: '8'
     },
     {
-      title: 'комбинация №2',
+      title: 'комбинация №9',
       coefficient: 25,
       calories: 105,
       proteins: 1.09,
@@ -188,12 +196,13 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: '3(3).png'
+      image: '3(3).png',
+      link: '9'
     }
   ],
   fourthStepCards: [
     {
-      title: 'комбинация №1',
+      title: 'комбинация №10',
       coefficient: 48,
       calories: 105,
       proteins: 1.09,
@@ -210,10 +219,11 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: '4(1).png'
+      image: '4(1).png',
+      link: '10'
     },
     {
-      title: 'комбинация №2',
+      title: 'комбинация №11',
       coefficient: 72,
       calories: 105,
       proteins: 1.09,
@@ -230,10 +240,11 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: '4(2).png'
+      image: '4(2).png',
+      link: '11'
     },
     {
-      title: 'комбинация №2',
+      title: 'комбинация №12',
       coefficient: 25,
       calories: 105,
       proteins: 1.09,
@@ -250,7 +261,8 @@ export const APP = {
         'Помидор',
         'Кинза'
       ],
-      image: '4(3).png'
+      image: '4(3).png',
+      link: '12'
     }
   ],
   ages: [15, 16, 17, 18, 19, 20, 21, 22, 23],
@@ -364,5 +376,35 @@ export const APP = {
     { title: 'Овощи', items: ['Помидоры', 'Огурцы', 'Чеснок'] },
     { title: 'Зелень', items: ['Укроп', 'Кинза', 'Базилик'] },
     { title: 'Фрукты', items: ['Лимон', 'Яблоко'] }
+  ],
+  vitamins: [
+    { title: 'Витамин А', content: '0.5мг', share: 7, procent: 1.5, water: false },
+    { title: 'Бета-каротин', content: '0.5мг', share: 4, procent: 1.5, water: false },
+    { title: 'Альфа-каротин', content: '0.5мг', share: 30, procent: 1.5, water: false },
+    { title: 'Витамин D', content: '0.5мг', share: 20, procent: 1.5, water: false },
+    { title: 'Витамин D2', content: '0.5мг', share: 23, procent: 1.5, water: false },
+    { title: 'Витамин D3', content: '0.5мг', share: 6, procent: 1.5, water: false },
+    { title: 'Витамин E', content: '0.5мг', share: 10, procent: 1.5, water: true },
+    { title: 'Витамин K', content: '0.5мг', share: 3, procent: 1.5, water: true }
+  ],
+  minarals: [
+    { title: 'Кальций', content: '0.5мг', share: 7, procent: 1.5, water: false },
+    { title: 'Железо', content: '0.5мг', share: 4, procent: 1.5, water: false },
+    { title: 'Магний', content: '0.5мг', share: 30, procent: 1.5, water: false },
+    { title: 'Фосфор', content: '0.5мг', share: 20, procent: 1.5, water: false },
+    { title: 'Калий', content: '0.5мг', share: 23, procent: 1.5, water: false },
+    { title: 'Натрий', content: '0.5мг', share: 6, procent: 1.5, water: false },
+    { title: 'Цинк', content: '0.5мг', share: 10, procent: 1.5, water: false },
+    { title: 'Медь', content: '0.5мг', share: 3, procent: 1.5, water: false }
+  ],
+  acids: [
+    { title: 'Триптофан', content: '0.5мг', share: 7, procent: 1.5, water: false },
+    { title: 'Треонин', content: '0.5мг', share: 4, procent: 1.5, water: false },
+    { title: 'Изолейцин', content: '0.5мг', share: 30, procent: 1.5, water: false },
+    { title: 'Лейцин', content: '0.5мг', share: 20, procent: 1.5, water: false },
+    { title: 'Лизин', content: '0.5мг', share: 23, procent: 1.5, water: false },
+    { title: 'Метионин', content: '0.5мг', share: 6, procent: 1.5, water: false },
+    { title: 'Цистин', content: '0.5мг', share: 10, procent: 1.5, water: false },
+    { title: 'Феналанин', content: '0.5мг', share: 3, procent: 1.5, water: false }
   ]
 };

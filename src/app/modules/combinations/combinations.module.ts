@@ -6,6 +6,8 @@ import { CombinationsComponent } from './component/combinations.component';
 import { CombinationsSideBarComponent } from './component/combinations-side-bar/combinations-side-bar.component';
 import { MaterialModule } from 'src/app/shared/material.module';
 import { CombinationsHeaderComponent } from './component/combinations-header/combinations-header.component';
+import { InfoComponent } from './component/info/info.component';
+import { OwnCombinationComponent } from './component/own-combination/own-combination.component';
 
 @NgModule({
   imports: [
@@ -16,7 +18,9 @@ import { CombinationsHeaderComponent } from './component/combinations-header/com
   declarations: [
     CombinationsComponent,
     CombinationsSideBarComponent,
-    CombinationsHeaderComponent
+    CombinationsHeaderComponent,
+    InfoComponent,
+    OwnCombinationComponent
   ],
   exports: [
     CombinationsComponent

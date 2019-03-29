@@ -1,0 +1,24 @@
+<div class="info">
+  <div class="info__table">
+    <div class="info__table-head">
+      <div class="info__table-head-item">{{type}}</div>
+      <div class="info__table-head-item">содержание</div>
+      <div class="info__table-head-item">доля суточной нормы</div>
+      <div class="info__table-head-item">на 100г</div>
+    </div>
+    <div class="info__table-body">
+      <div class="info__table-body-item" *ngFor="let item of items">
+        <div class="info__table-body-item-title">{{item.title}}</div>
+        <div class="info__table-body-item-content">{{item.content}}</div>
+        <div class="info__table-body-item-share">
+          <div class="info__table-body-item-procent-filler" [class.info__table-body-item-procent-filler_water]="item.water" [ngStyle]="{'width': item.share + '%'}"></div>
+        </div>
+        <div class="info__table-body-item-procent">{{item.procent}}%</div>
+      </div>
+    </div>
+    <div class="info__comment">
+      <div class="info__comment-fat" *ngIf="type === 'витамины'"><div class="info__comment-rect"></div>Жирорастворимые</div>
+      <div class="info__comment-water" *ngIf="type === 'витамины'"><div class="info__comment-rect"></div>Водорастворимые</div>
+    </div>
+  </div>
+</div>

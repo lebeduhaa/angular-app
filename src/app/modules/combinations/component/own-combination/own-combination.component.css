@@ -1,0 +1,26 @@
+.combinations {
+  height: 100%;
+  display: flex;
+  background-image: url('../../../../assets/img/combinations/combinations-back.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.combinations__side-bar {
+  flex-basis: 20%;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.1);
+  z-index: 2;
+}
+.combinations__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.combinations__content-header {
+  flex-basis: 10%;
+  box-shadow: 0 0 20px rgba(128, 128, 128, .1);
+}
+.combinations__content-value {
+  margin: 20px;
+  flex-basiS: 90%;
+  box-sizing: border-box;
+}

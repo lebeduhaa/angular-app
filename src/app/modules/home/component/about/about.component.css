@@ -14,6 +14,7 @@
   height: 100%;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .about__images {
   flex-basis: 50%;
@@ -93,9 +94,6 @@
   padding: 15px;
 }
 .about__information-icon {
-  /* position: float;
-  top: 0;
-  right: 0; */
   float: right;
   height: 40px;
   width: 40px;

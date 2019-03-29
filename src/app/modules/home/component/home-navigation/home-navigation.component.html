@@ -1,7 +1,7 @@
 <div class="navigation">
   <div class="navigation__links">
-    <div class="navigation__link" routerLink="/home/main" routerLinkActive="navigation__link_active">1</div>
-    <div class="navigation__link" routerLink="/home/about" routerLinkActive="navigation__link_active">2</div>
-    <div class="navigation__link" routerLink="/home/feedback" routerLinkActive="navigation__link_active">3</div>
+    <div [ngStyle]="{'background-color': nowFeedback ? '#f6f7fc' : '#f8f8f8'}" class="navigation__link" routerLink="/home/main" routerLinkActive="navigation__link_active">1</div>
+    <div [ngStyle]="{'background-color': nowFeedback ? '#f6f7fc' : '#f8f8f8'}" class="navigation__link" routerLink="/home/about" routerLinkActive="navigation__link_active">2</div>
+    <div [ngStyle]="{'background-color': nowFeedback ? '#f6f7fc' : '#f8f8f8'}" class="navigation__link" routerLink="/home/feedback" routerLinkActive="navigation__link_active">3</div>
   </div>
 </div>

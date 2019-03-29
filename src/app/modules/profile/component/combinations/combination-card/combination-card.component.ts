@@ -15,6 +15,7 @@ export class CombinationCardComponent {
   @Input() carbohydrates: number;
   @Input() components: string[];
   @Input() image: string;
+  @Input() link: string;
 
   public getBackground(): any {
     return `url('assets/img/cards/${this.image}')`;

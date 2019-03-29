@@ -67,6 +67,25 @@
             <div class="combinations__human">48%</div>
           </div>
         </div>
+        <div class="combinations__info-right">
+          <div class="combinations__info-parameters">
+            <div class="combinations__info-parameters-item">сахар - 59,0г</div>
+            <div class="combinations__info-parameters-item">клетчатка - 0.2г</div>
+            <div class="combinations__info-parameters-item">крахмал - 0.2г</div>
+            <div class="combinations__info-parameters-item">холестерин - 21.0мг</div>
+            <div class="combinations__info-parameters-item">трансжиры - 0.1г</div>
+          </div>
+          <div class="combinations__info-additional">
+            <div class="additional__header">
+              <div class="additional__header-item" [class.additional__header-item_active]="vitaminsActive" [routerLink]="'/combinations/' + currentCombination + '/vitamins'">витмины</div>
+              <div class="additional__header-item" [class.additional__header-item_active]="mineralsActive" [routerLink]="'/combinations/' + currentCombination + '/minerals'">минералы</div>
+              <div class="additional__header-item" [class.additional__header-item_active]="acidsActive" [routerLink]="'/combinations/' + currentCombination + '/amino-acids'">аминокислоты</div>
+            </div>
+            <div class="additional__content">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

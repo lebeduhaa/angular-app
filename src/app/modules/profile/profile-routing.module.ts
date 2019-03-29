@@ -8,6 +8,9 @@ import { ProfileComponent } from './component/profile.component';
     RouterModule.forChild([
       { path: 'profile', component: ProfileComponent }
     ])
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class ProfileRoutingModule {}
