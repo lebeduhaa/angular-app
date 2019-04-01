@@ -356,15 +356,11 @@ THE SOFTWARE.
 @angular/animations
 MIT
 
-@angular/material/core
-
-@angular/material/checkbox
-
-@angular/material/form-field
-
-@angular/material/select
+@angular/material/button
 
 @angular/material/icon
+
+@angular/material/checkbox
 
 perfect-scrollbar
 MIT
@@ -438,8 +434,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
-@angular/material/button
 
 zone.js
 MIT
