@@ -76,7 +76,7 @@
   border: none;
   background-color: white;
   font-family: 'SFUIDisplay-Regular';
-  font-size: 15x;
+  font-size: 15px;
   width: 130px;
   height: 40px;
   border-radius: 5px;
@@ -92,7 +92,7 @@
   background-size: 100% 100%;
   background-position: center center;
   font-family: 'SFUIDisplay-Regular';
-  font-size: 15x;
+  font-size: 15px;
   color: white;
   width: 130px;
   height: 40px;
@@ -254,6 +254,27 @@ button .mat-icon {
 .profile__additional-preferences-close .mat-icon:hover {
   text-shadow: 0 0 1px black;
 }
+.kostil {
+  display: none;
+}
+.profile__parameters-next-button_ok-inside {
+  display: none;
+  margin-bottom: 15px;
+}
+.profile__parameters-next-button_ok-outside {
+  display: block;
+}
+.profile__additional-preferences-action {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.profile__additional-preferences-warpper_mobile {
+  display: none;
+}
+.profile__additional-preferences-warpper_desktop {
+  display: block;
+}
 
 @media screen and (max-width: 1550px) {
   .profile__wrapper {
@@ -285,5 +306,93 @@ button .mat-icon {
   }
   .profile__parameters-actions {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .profile__goal-cards {
+    width: 100vw;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding: 40px 30px;
+    box-sizing: border-box;
+  }
+  .profile__goal-card {
+    margin-right: 30px;
+  }
+  .profile__goal-action {
+    margin-top: 0;
+  }
+  .kostil {
+    width: 50px;
+    height: 10px;
+    color: transparent;
+    display: block;
+  }
+  .profile__goal-button {
+    width: 140px;
+    height: 40px;
+    font-size: 8px;
+  }
+  .profile__personal-data-value, .profile__personal-data-value2 {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .profile__personal-data__pregnancy {
+    margin-left: 0;
+  }
+  .profile__preferences-item {
+    flex-basis: 50%;
+  }
+  .profile__parameters {
+    width: 100%;
+  }
+  .profile__personal-data-title {
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+  .profile__personal-data {
+    padding: 20px;
+  }
+  .mat-form-field {
+    width: 100%;
+  }
+  .profile__preferences-add {
+    flex-basis: 100%;
+  }
+  .profile__parameters-actions {
+    margin-top: 15px;
+    width: 90%;
+    margin: 15px auto 20px auto;
+  }
+  .profile__parameters-prev-button, .profile__parameters-next-button {
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+  }
+  .profile__additional-preferences {
+    padding: 0 20px;
+  }
+  .preference__group {
+    flex-basis: 100%;
+    padding-right: 0;
+  }
+  .preference__group-item {
+    flex-basis: 50%;
+  }
+  .profile__parameters-next-button_ok-inside {
+    display: block;
+  }
+  .profile__parameters-next-button_ok-outside {
+    display: none;
+  }
+  .profile__additional-preferences-wrapper {
+    padding: 50px 0 0 0;
+  }
+  .profile__additional-preferences-warpper_mobile {
+    display: block;
+  }
+  .profile__additional-preferences-warpper_desktop {
+    display: none;
   }
 }

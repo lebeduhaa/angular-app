@@ -50,3 +50,8 @@ body, html {
     height: 20px !important;
   }
 }
+@media screen and (max-width: 568px) {
+  .mat-form-field-wrapper {
+    width: auto;
+  }
+}

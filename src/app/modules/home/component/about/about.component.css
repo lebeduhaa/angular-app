@@ -205,3 +205,50 @@
     background-position: center 16px;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .about__wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .about {
+    height: auto;
+    min-height: 100%;
+    background-image: none;
+    background-color: #f8f8f8;
+  }
+  .about__image-additional {
+    height: auto;
+  }
+  .about__information-title-back {
+    display: none;
+  }
+  .about__information-title::after {
+    display: none;
+  }
+  .about__information-title-common {
+    text-align: center;
+  }
+  .about__information-description {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about__information-items {
+    margin: 15px auto;
+    width: 90%;
+  }
+  .about__information-item {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .about__information-action {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+  }
+  .about__information-action button {
+    height: 40px;
+    width: 130px;
+    font-size: 9px;
+  }
+}

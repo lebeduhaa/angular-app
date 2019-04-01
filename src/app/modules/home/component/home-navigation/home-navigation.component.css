@@ -28,3 +28,9 @@
 .navigation__link_active {
   font-family: 'SFUIDisplay-Medium';
 }
+
+@media screen and (max-width: 568px) {
+  .navigation {
+    display: none;
+  }
+}

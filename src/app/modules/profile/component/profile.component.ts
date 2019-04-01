@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { APP } from 'src/app/shared/application-constants';
 
 @Component({
@@ -6,7 +6,7 @@ import { APP } from 'src/app/shared/application-constants';
   templateUrl: 'profile.component.html',
   styleUrls: ['profile.component.css']
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit {
 
   public currentStep = 1;
   public selectedGoal = 2;
@@ -22,6 +22,13 @@ export class ProfileComponent {
   public weight: number;
   public group: string;
   public pregnancy: string;
+
+  ngOnInit() {
+    setTimeout(() => {
+      const element = document.querySelector('.profile__goal-cards');
+      element.scrollTo({left: element.scrollWidth / 2 - element.clientWidth / 2});
+    }, 0);
+  }
 
   public closeAdditionalPreferences(): void {
     this.additionalGroups = this.additionalGroups.map(group => {

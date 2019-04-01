@@ -46,6 +46,7 @@
             ></app-goal-card>
             <div class="profile__goal-card_line"></div>
           </div>
+          <div class="kostil">a</div>
         </div>
         <div class="profile__goal-action">
           <button class="profile__goal-button" (click)="reactOnChangeCurrentStepEvent(2)">Продолжить</button>
@@ -117,23 +118,43 @@
               <div class="profile__additional-preferences-close" (click)="closeAdditionalPreferences()">
                 <mat-icon>close</mat-icon>
               </div>
-              <perfect-scrollbar [ngStyle]="{'max-height': scrollHeight + 'px'}">
+              <div class="profile__additional-preferences-warpper_mobile">
                 <div class="profile__additional-preferences">
-                  <div class="preference__group" *ngFor="let group of additionalGroups">
-                    <div class="preference__group-title">{{group.title}}</div>
-                    <div class="preference__group-items">
-                      <div class="preference__group-item" *ngFor="let item of group.items">
-                        <mat-checkbox [(ngModel)]="item.selected">{{item.name}}</mat-checkbox>
+                    <div class="preference__group" *ngFor="let group of additionalGroups">
+                      <div class="preference__group-title">{{group.title}}</div>
+                      <div class="preference__group-items">
+                        <div class="preference__group-item" *ngFor="let item of group.items">
+                          <mat-checkbox [(ngModel)]="item.selected">{{item.name}}</mat-checkbox>
+                        </div>
                       </div>
                     </div>
+                    <div class="profile__additional-preferences-action">
+                      <button class="profile__parameters-next-button_ok profile__parameters-next-button profile__parameters-next-button_ok-inside" *ngIf="addPreferencesVisibility" (click)="saveAdditionalPreferences()">Ок</button>
+                    </div>
                   </div>
-                </div>
-              </perfect-scrollbar>
+              </div>
+              <div class="profile__additional-preferences-warpper_desktop">
+                <perfect-scrollbar [ngStyle]="{'max-height': scrollHeight + 'px'}">
+                  <div class="profile__additional-preferences">
+                    <div class="preference__group" *ngFor="let group of additionalGroups">
+                      <div class="preference__group-title">{{group.title}}</div>
+                      <div class="preference__group-items">
+                        <div class="preference__group-item" *ngFor="let item of group.items">
+                          <mat-checkbox [(ngModel)]="item.selected">{{item.name}}</mat-checkbox>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile__additional-preferences-action">
+                      <button class="profile__parameters-next-button_ok profile__parameters-next-button profile__parameters-next-button_ok-inside" *ngIf="addPreferencesVisibility" (click)="saveAdditionalPreferences()">Ок</button>
+                    </div>
+                  </div>
+                </perfect-scrollbar>
+              </div>
             </div>
         </div>
         <div class="profile__parameters-actions">
           <button class="profile__parameters-prev-button" (click)="reactOnChangeCurrentStepEvent(1)">Назад</button>
-          <button class="profile__parameters-next-button_ok profile__parameters-next-button" *ngIf="addPreferencesVisibility" (click)="saveAdditionalPreferences()">Ок</button>
+          <button class="profile__parameters-next-button_ok profile__parameters-next-button profile__parameters-next-button_ok-outside" *ngIf="addPreferencesVisibility" (click)="saveAdditionalPreferences()">Ок</button>
           <button class="profile__parameters-next-button" (click)="reactOnChangeCurrentStepEvent(3)">Дальше</button>
         </div>
       </div>
