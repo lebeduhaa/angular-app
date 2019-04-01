@@ -1,9 +1,12 @@
-<div class="main" appScrollNext (scrollNextEvent)="reactOnScrollNextEvent()">
+<!-- <div class="main" appScrollNext (scrollNextEvent)="reactOnScrollNextEvent()"> -->
+<div class="main" id="main">
   <div class="main__navigation">
     <div class="main__navigation-items-wrapper">
       <div class="main__navigation-items">
-        <li class="main__navigation-item" routerLink="/home/about">о сервисе</li>
-        <li class="main__navigation-item" routerLink="/home/feedback">задать вопрос</li>
+        <!-- <li class="main__navigation-item" routerLink="/home/about">о сервисе</li> -->
+        <li class="main__navigation-item" appScrollTo [id]="'about'">о сервисе</li>
+        <!-- <li class="main__navigation-item" routerLink="/home/feedback">задать вопрос</li> -->
+        <li class="main__navigation-item" appScrollTo [id]="'feedback'">задать вопрос</li>
       </div>
     </div>
   </div>
@@ -20,7 +23,8 @@
     </div>
   </div>
   <div class="main__footer">
-    <button class="main__more" (click)="reactOnScrollNextEvent()"></button>
+    <!-- <button class="main__more" (click)="reactOnScrollNextEvent()"></button> -->
+    <button class="main__more" appScrollTo [id]="'about'"></button>
     <div class="main__footer-description">подробнее</div>
   </div>
   <div class="main__plate">

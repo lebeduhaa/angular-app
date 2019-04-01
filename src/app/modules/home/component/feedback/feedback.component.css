@@ -105,3 +105,45 @@
     padding: 25px;
   }
 }
+@media screen and (max-width: 568px) {
+  .feedback {
+    padding: 10px;
+  }
+  .feedback__control input {
+    width: 170px;
+    font-size: 14px;
+    height: 30px;
+  }
+  .feedback__send {
+    width: 178px;
+    height: 40px;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .feedback__form-title {
+    font-size: 15px;
+  }
+  .feedback__form-description {
+    width: 100%;
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .feedback__form {
+    padding: 5px;
+    border-radius: 8px;
+  }
+  .feedback__control {
+    margin-bottom: 20px;
+    background-size: auto 50%;
+    padding-left: 50px;
+    background-position: 10px center;
+  }
+  .feedback__send-content {
+    padding: 0 10px 0 0;
+  }
+  .feedback__send-icon {
+    margin-left: 10px;
+  }
+}
+

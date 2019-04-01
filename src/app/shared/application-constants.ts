@@ -407,27 +407,30 @@ export const APP = {
     { title: 'Цистин', content: '0.5мг', share: 10, procent: 1.5, water: false },
     { title: 'Феналанин', content: '0.5мг', share: 3, procent: 1.5, water: false }
   ],
-  products: [
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
-    { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' }
-
-  ]
+  products: {
+    a: [
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' }
+    ],
+    b: [
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' },
+      { title: 'свежие бананы', mass: 100, selected: false, image: 'banana.png' }
+    ]
+  }
 };

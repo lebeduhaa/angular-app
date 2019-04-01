@@ -21,10 +21,20 @@
   top: 23px;
   color: #c6c6c6;
 }
+.own__content-title {
+  margin: 30px 50px 15px 50px;
+  text-transform: uppercase;
+  font-family: 'SFUIDisplay-Medium';
+  border-left: 2px solid #6ebf5e;
+  padding-left: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
 .own__content {
   display: flex;
   flex-wrap: wrap;
-  margin: 60px 50px 0 50px;
+  margin: 0 50px;
 }
 .own__content-item-wrapper {
   height: 116px;
