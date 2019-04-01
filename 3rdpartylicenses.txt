@@ -300,6 +300,9 @@ MIT
 @angular/router
 MIT
 
+@angular/forms
+MIT
+
 @angular/cdk
 MIT
 The MIT License
@@ -354,9 +357,6 @@ THE SOFTWARE.
 MIT
 
 @angular/material/core
-
-@angular/forms
-MIT
 
 @angular/material/checkbox
 
