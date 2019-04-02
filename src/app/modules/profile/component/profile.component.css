@@ -314,8 +314,9 @@ button .mat-icon {
     width: 100vw;
     overflow-x: scroll;
     justify-content: flex-start;
-    padding: 40px 30px;
+    padding: 45px 30px;
     box-sizing: border-box;
+    margin-top: 10px;
   }
   .profile__goal-card {
     margin-right: 30px;
@@ -394,5 +395,8 @@ button .mat-icon {
   }
   .profile__additional-preferences-warpper_desktop {
     display: none;
+  }
+  .profile__combinations {
+    width: 100%;
   }
 }

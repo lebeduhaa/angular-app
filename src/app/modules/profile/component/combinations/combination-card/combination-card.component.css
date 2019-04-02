@@ -97,3 +97,28 @@
 .card:hover .card__components {
   padding: 0;
 }
+
+@media screen and (max-width: 568px) {
+  .card {
+    width: 220px;
+    height: 360px;
+  }
+  .card__title, .card__coefficient {
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .card__parameters-title, .card__parameters-value, .card__component {
+    font-size: 9px;
+  }
+  .card__calories {
+    margin-top: 95px;
+    padding: 0 15px;
+  }
+  .card__additional {
+    padding: 0 15px;
+    margin-top: 10px;
+  }
+  .card__component {
+    height: 24px;
+  }
+}

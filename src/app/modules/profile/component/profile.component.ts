@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { APP } from 'src/app/shared/application-constants';
 
 @Component({
@@ -26,7 +27,10 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       const element = document.querySelector('.profile__goal-cards');
-      element.scrollTo({left: element.scrollWidth / 2 - element.clientWidth / 2});
+
+      if (element) {
+        element.scrollTo({left: element.scrollWidth / 2 - element.clientWidth / 2});
+      }
     }, 0);
   }
 

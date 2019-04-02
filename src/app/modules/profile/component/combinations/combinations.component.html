@@ -1,80 +1,129 @@
 <div class="combinations">
-  <div class="combinations__cards">
-    <div @showHide class="combinations__first" *ngIf="currentNav === 1">
-      <div app class="combinations__card" *ngFor="let card of firstStepCards">
-        <app-combination-card
-          [title]="card.title"
-          [coefficient]="card.coefficient"
-          [calories]="card.calories"
-          [proteins]="card.proteins"
-          [fats]="card.fats"
-          [carbohydrates]="card.carbohydrates"
-          [components]="card.components"
-          [image]="card.image"
-          [link]="card.link"
-        ></app-combination-card>
+  <div class="combinations__desktop">
+    <div class="combinations__cards">
+      <div @showHide class="combinations__first" *ngIf="currentNav === 1">
+        <div app class="combinations__card" *ngFor="let card of firstStepCards">
+          <app-combination-card
+            [title]="card.title"
+            [coefficient]="card.coefficient"
+            [calories]="card.calories"
+            [proteins]="card.proteins"
+            [fats]="card.fats"
+            [carbohydrates]="card.carbohydrates"
+            [components]="card.components"
+            [image]="card.image"
+            [link]="card.link"
+          ></app-combination-card>
+        </div>
+      </div>
+      <div @showHide class="combinations__first" *ngIf="currentNav === 2">
+        <div app class="combinations__card" *ngFor="let card of secondStepCards">
+          <app-combination-card
+            [title]="card.title"
+            [coefficient]="card.coefficient"
+            [calories]="card.calories"
+            [proteins]="card.proteins"
+            [fats]="card.fats"
+            [carbohydrates]="card.carbohydrates"
+            [components]="card.components"
+            [image]="card.image"
+            [link]="card.link"
+          ></app-combination-card>
+        </div>
+      </div>
+      <div @showHide class="combinations__first" *ngIf="currentNav === 3">
+        <div app class="combinations__card" *ngFor="let card of thirdStepCards">
+          <app-combination-card
+            [title]="card.title"
+            [coefficient]="card.coefficient"
+            [calories]="card.calories"
+            [proteins]="card.proteins"
+            [fats]="card.fats"
+            [carbohydrates]="card.carbohydrates"
+            [components]="card.components"
+            [image]="card.image"
+            [link]="card.link"
+          ></app-combination-card>
+        </div>
+      </div>
+      <div @showHide class="combinations__first" *ngIf="currentNav === 4">
+        <div app class="combinations__card" *ngFor="let card of fourthStepCards">
+          <app-combination-card
+            [title]="card.title"
+            [coefficient]="card.coefficient"
+            [calories]="card.calories"
+            [proteins]="card.proteins"
+            [fats]="card.fats"
+            [carbohydrates]="card.carbohydrates"
+            [components]="card.components"
+            [image]="card.image"
+            [link]="card.link"
+          ></app-combination-card>
+        </div>
       </div>
     </div>
-    <div @showHide class="combinations__first" *ngIf="currentNav === 2">
-      <div app class="combinations__card" *ngFor="let card of secondStepCards">
-        <app-combination-card
-          [title]="card.title"
-          [coefficient]="card.coefficient"
-          [calories]="card.calories"
-          [proteins]="card.proteins"
-          [fats]="card.fats"
-          [carbohydrates]="card.carbohydrates"
-          [components]="card.components"
-          [image]="card.image"
-          [link]="card.link"
-        ></app-combination-card>
-      </div>
+    <div class="combinations__prev">
+      <button [disabled]="goPrevDisabled()" (click)="decNav()" mat-icon-button>
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
     </div>
-    <div @showHide class="combinations__first" *ngIf="currentNav === 3">
-      <div app class="combinations__card" *ngFor="let card of thirdStepCards">
-        <app-combination-card
-          [title]="card.title"
-          [coefficient]="card.coefficient"
-          [calories]="card.calories"
-          [proteins]="card.proteins"
-          [fats]="card.fats"
-          [carbohydrates]="card.carbohydrates"
-          [components]="card.components"
-          [image]="card.image"
-          [link]="card.link"
-        ></app-combination-card>
-      </div>
+    <div class="combinations__next">
+      <button [disabled]="goNextDisabled()" (click)="incNav()" mat-icon-button>
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
     </div>
-    <div @showHide class="combinations__first" *ngIf="currentNav === 4">
-      <div app class="combinations__card" *ngFor="let card of fourthStepCards">
-        <app-combination-card
-          [title]="card.title"
-          [coefficient]="card.coefficient"
-          [calories]="card.calories"
-          [proteins]="card.proteins"
-          [fats]="card.fats"
-          [carbohydrates]="card.carbohydrates"
-          [components]="card.components"
-          [image]="card.image"
-          [link]="card.link"
-        ></app-combination-card>
-      </div>
+    <div class="combinations__navigation">
+      <div class="combinations__navigation-item" (click)="changeCurrentNav(1)" [class.combinations__navigation-item_active]="currentNav === 1"></div>
+      <div class="combinations__navigation-item" (click)="changeCurrentNav(2)" [class.combinations__navigation-item_active]="currentNav === 2"></div>
+      <div class="combinations__navigation-item" (click)="changeCurrentNav(3)" [class.combinations__navigation-item_active]="currentNav === 3"></div>
+      <div class="combinations__navigation-item" (click)="changeCurrentNav(4)" [class.combinations__navigation-item_active]="currentNav === 4"></div>
     </div>
   </div>
-  <div class="combinations__prev">
-    <button [disabled]="goPrevDisabled()" (click)="decNav()" mat-icon-button>
-      <mat-icon>arrow_back_ios</mat-icon>
-    </button>
-  </div>
-  <div class="combinations__next">
-    <button [disabled]="goNextDisabled()" (click)="incNav()" mat-icon-button>
-      <mat-icon>arrow_forward_ios</mat-icon>
-    </button>
-  </div>
-  <div class="combinations__navigation">
-    <div class="combinations__navigation-item" (click)="changeCurrentNav(1)" [class.combinations__navigation-item_active]="currentNav === 1"></div>
-    <div class="combinations__navigation-item" (click)="changeCurrentNav(2)" [class.combinations__navigation-item_active]="currentNav === 2"></div>
-    <div class="combinations__navigation-item" (click)="changeCurrentNav(3)" [class.combinations__navigation-item_active]="currentNav === 3"></div>
-    <div class="combinations__navigation-item" (click)="changeCurrentNav(4)" [class.combinations__navigation-item_active]="currentNav === 4"></div>
+
+  <div class="combinations__mobile">
+    <div 
+      class="combinations__mobile-cards" 
+      appSwipe 
+      (swipeRightEvent)="reactOnSwipeEvent('right')"
+      (swipeLeftEvent)="reactOnSwipeEvent('left')"
+      [disableRightSwipe]="disableRightSwipe()"
+      [disableLeftSwipe]="disableLeftSwipe()"
+    >
+      <div app class="combinations__card" *ngFor="let card of allCards; let i = index;">
+        <div 
+          class="combinations__mobile-card"
+          [class.combinations__mobile-card_selected]="cardSelected(i)"
+        >
+          <app-combination-card
+            [title]="card.title"
+            [coefficient]="card.coefficient"
+            [calories]="card.calories"
+            [proteins]="card.proteins"
+            [fats]="card.fats"
+            [carbohydrates]="card.carbohydrates"
+            [components]="card.components"
+            [image]="card.image"
+            [link]="card.link"
+          ></app-combination-card>
+        </div>
+      </div>
+    </div>
+    <div class="combinations__mobile-navigation">
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(0) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(1) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(2) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(3) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(4) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(5) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(6) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(7) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(8) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(9) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(10) ? '#465057' : '#fff'}"></div>
+      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(11) ? '#465057' : '#fff'}"></div>
+    </div>
+    <div class="combinations__mobile-confirm">
+      <button (click)="goToCombinations()">Продолжить</button>
+    </div>
   </div>
 </div>

@@ -62,6 +62,18 @@
 .combinations__next .mat-icon {
   margin-left: -4px;
 }
+.combinations__mobile {
+  display: none;
+}
+.combinations__desktop {
+  display: block;
+}
+.combinations__mobile-card_selected {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: .4s;
+}
 
 @media screen and (max-width: 1550px) {
   .combinations {
@@ -71,3 +83,70 @@
     margin-top: 0;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .combinations {
+    margin-left: 0;
+    overflow: hidden;
+    width: 100%;
+    overflow: hidden;
+  }
+  .combinations__mobile {
+    display: block;
+    position: relative;
+    padding-top: 460px;
+  }
+  .combinations__desktop {
+    display: none;
+  }
+  .combinations__mobile-cards {
+    display: flex;
+  }
+  .combinations__mobile-cards {
+    padding: 45px 0;
+    position: absolute;
+    top: 0;
+    transition: .3s;
+  }
+  .combinations__card {
+    margin-right: 25px;
+  }
+  .combinations__mobile-navigation {
+    width: 160px;
+    height: 3px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .combinations__mobile-navigation-item {
+    height: 100%;
+    width: 100%;
+    transition: .4s;
+  }
+  .combinations__mobile-confirm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .combinations__mobile-confirm button {
+    border: none;
+    background-image: url('../../../../../assets/img/button.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-position: center center;
+    font-family: 'SFUIDisplay-Medium';
+    font-size: 8px;
+    text-transform: uppercase;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+  }
+}
+
