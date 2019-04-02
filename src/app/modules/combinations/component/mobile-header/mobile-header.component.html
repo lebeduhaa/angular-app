@@ -1,0 +1,20 @@
+<div class="mobile-header">
+  <div class="mobile-header__prev" *ngIf="currentCombination !== 'default'">
+    <button [disabled]="goPrevDisabled()" (click)="decCombination()" mat-icon-button>
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="currentCombination !== 'default'" class="mobile-header__title">комбинация {{currentCombination}}</div>
+  <div *ngIf="currentCombination !== 'default'" class="mobile-header__next">
+    <button [disabled]="goNextDisabled()" (click)="incCombination()" mat-icon-button>
+      <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="currentCombination === 'default'" class="mobile-header__filter">
+    <input type="text" placeholder="Поиск...">
+    <mat-icon>search</mat-icon>
+  </div>
+  <div class="mobile-hader__icon" (click)="showSideBar()">
+    <img src="assets/img/combinations/mobile-menu-icon.png" alt="">
+  </div>
+</div>

@@ -2,58 +2,10 @@
   margin-bottom: 19px;
   display: flex;
   justify-content: space-between;
-  height: 125px;
   box-sizing: border-box;
 }
-.combinations__parameters-item {
-  background-color: #fff;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  flex-basis: 20%;
-  box-sizing: border-box;
-  margin-right: 25px;
-  justify-content: center;
-  border-radius: 4px;
-  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
-}
-.combinations__parameters-item:last-child {
+.app__parameter-wrapper:last-child {
   margin-right: 0;
-}
-.combinations__item_image {
-  font-family: 'Proxima-Nova-Extra-Condensed-Regular';
-  font-size: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 65px;
-  width: 65px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 25px;
-}
-.combinations__parameters-item_proteines .combinations__item_image {
-  background-image: url('../../../../../assets/img/combinations/cmb-proteines.png');
-}
-.combinations__parameters-item_fats .combinations__item_image {
-  background-image: url('../../../../../assets/img/combinations/cmb-fats.png');
-}
-.combinations__parameters-item_colbr .combinations__item_image {
-  background-image: url('../../../../../assets/img/combinations/cmb-colobr.png');
-}
-.combinations__parameters-item_water .combinations__item_image {
-  background-image: url('../../../../../assets/img/combinations/cmb-water.png');
-}
-.combinations__parameters-item_zola .combinations__item_image {
-  background-image: url('../../../../../assets/img/combinations/cmb-zola.png');
-}
-.combinations__item-description {
-  font-family: 'SFUIDisplay-Light';
-  font-size: 31px;
-}
-.combinations__item-title {
-  font-family: 'Proxima-Nova-Condensed-Light';
-  font-size: 17px;
 }
 .combinations__info {
   width: 100%;
@@ -62,54 +14,6 @@
 }
 .combinations__info-left {
   flex-basis: 25%;
-}
-.combinations__calories {
-  background-color: #fff;
-  padding: 25px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 215px;
-  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
-}
-.combinations__calories-title {
-  font-family: 'SFUIDisplay-Regular';
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.combinations__calories-value {
-  font-size: 23px;
-  font-family: 'Roboto Condensed';
-  background-image: url('../../../../../assets/img/combinations/calor.png');
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
-}
-.combinations__coeficient {
-  padding: 25px;
-  box-sizing: border-box;
-  background-color: #fff;
-  margin-top: 20px;
-  border-radius: 4px;
-  height: 435px;
-  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
-}
-.combinations__human {
-  height: 78%;
-  margin-top: 50px;
-  background-image: url('../../../../../assets/img/combinations/human.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
-  text-align: center;
-  padding-top: 110px;
-  font-size: 30px;
-  font-family: 'Proxima-Nova-Extra-Condensed-Regular';
-  box-sizing: border-box;
 }
 .combinations__info-parameters {
   height: 75px;
@@ -120,7 +24,7 @@
   box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
 }
 .combinations__info-parameters-item {
-  font-family: 'SFUIDisplay-.combinations__parameters[_ngcontent-c6]Regular';
+  font-family: 'SFUIDisplay-Regular';
   font-size: 15px;
   flex-basis: 20%;
   box-sizing: border-box;
@@ -170,31 +74,22 @@
   margin: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
+.about__desktop {
+  display: block;
+}
+.about__mobile {
+  display: none;
+}
+.app__parameter-wrapper {
+  box-sizing: border-box;
+  flex-basis: 20%;
+  margin-right: 25px;
+}
 
 @media screen and (max-width: 1550px) {
   .combinations__parameters {
     height: auto;
     margin-bottom: 10px;
-  }
-  .combinations__parameters-item {
-    margin-right: 10px;
-  }
-  .combinations__calories {
-    height: auto;
-    box-sizing: content-box;
-    padding: 10px;
-  }
-  .combinations__calories {
-    height: auto;
-  }
-  .combinations__calories-value {
-    height: 130px;
-  }
-  .combinations__coeficient {
-    height: auto;
-    padding: 10px;
-    box-sizing: content-box;
-    margin-top: 10px;
   }
   .combinations__human {
     height: 210px;
@@ -217,5 +112,57 @@
   }
   .combinations__info-additional {
     margin-top: 10px;
+  }
+  .app__parameter-wrapper {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .about__desktop {
+    display: none;
+  }
+  .about__mobile {
+    display: block;
+  }
+  .about__mobile-parameter-wrapper {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .about__mobile-parameter-wrapper:nth-child(2n) {
+    margin-right: 0;
+  }
+  .about__mobile-parameters-top, .about__mobile-parameters-bot {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__mobile-calories-wrapper {
+    margin-top: 10px;
+  }
+  .about__mobile-panel {
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
+    height: 30px;
+    padding: 10px 0;
+    font-size: 8px;
+    font-family: 'SFUIDisplay-Regular';
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    text-transform: uppercase;
+  }
+  .about__mobile-panel-item {
+    flex-basis: 50%;
+    text-align: center;
+    border-right: 1px solid #e1e1e1;
+  }
+  .about__mobile-panel-item:last-child {
+    border: none;
+  }
+  .about__mobile-panel {
+    margin-top: 10px;
+  }
+  .additional__header-item {
+    font-size: 9px;
   }
 }

@@ -1,13 +1,19 @@
 <div class="combinations">
-  <div class="combinations__side-bar">
+  <div class="combinations__side-bar" *ngIf="sideBarVisibility" @appearsFromLeft (swipeleft)="hideSedebar()">
     <app-combinations-side-bar></app-combinations-side-bar>
   </div>
   <div class="combinations__content">
     <div class="combinations__content-header">
       <app-combinations-header></app-combinations-header>
     </div>
+    <div class="combinations__content-mobile-header">
+      <app-mobile-header></app-mobile-header>
+    </div>
     <div class="combinations__content-value">
       <router-outlet></router-outlet>
     </div>
+  </div>
+  <div class="combinations__mobile-navigation">
+    <app-mobile-navigation></app-mobile-navigation>
   </div>
 </div>

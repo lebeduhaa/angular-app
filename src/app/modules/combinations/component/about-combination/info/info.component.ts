@@ -22,7 +22,7 @@ export class InfoComponent implements OnInit {
   }
 
   public handleUrl(url: string): void {
-    switch(url) {
+    switch (url) {
       case 'vitamins':
         this.type = 'витамины';
         this.items = APP.vitamins;

@@ -1,62 +1,50 @@
-<div class="combinations__parameters">
-    <div class="combinations__parameters-item combinations__parameters-item_proteines">
-      <div class="combinations__item_image">
-        8%
-      </div>
-      <div class="combinations__item-value">
-        <div class="combinations__item-title">Белки:</div>
-        <div class="combinations__item-description">5.9г</div>
-      </div>
+<div class="about__desktop">
+  <div class="combinations__parameters">
+    <div class="app__parameter-wrapper">
+      <app-parameter
+        [procent]="8"
+        [title]="'Белки'"
+        [description]="'5.9'"
+        [image]="'cmb-proteines.png'"
+      ></app-parameter>
     </div>
-    <div class="combinations__parameters-item combinations__parameters-item_fats">
-      <div class="combinations__item_image">
-        38%
-      </div>
-      <div class="combinations__item-value">
-        <div class="combinations__item-title">Жиры:</div>
-        <div class="combinations__item-description">32г</div>
-      </div>
+    <div class="app__parameter-wrapper">
+      <app-parameter
+        [procent]="38"
+        [title]="'Жиры'"
+        [description]="'32'"
+        [image]="'cmb-fats.png'"
+      ></app-parameter>
     </div>
-    <div class="combinations__parameters-item combinations__parameters-item_colbr">
-      <div class="combinations__item_image">
-        8%
-      </div>
-      <div class="combinations__item-value">
-        <div class="combinations__item-title">Углеводы:</div>
-        <div class="combinations__item-description">59г</div>
-      </div>
+    <div class="app__parameter-wrapper">
+      <app-parameter
+        [procent]="19"
+        [title]="'Углеводы'"
+        [description]="'59'"
+        [image]="'cmb-colobr.png'"
+      ></app-parameter>
     </div>
-    <div class="combinations__parameters-item combinations__parameters-item_water">
-      <div class="combinations__item_image">
-        8%
-      </div>
-      <div class="combinations__item-value">
-        <div class="combinations__item-title">Вода:</div>
-        <div class="combinations__item-description">74г</div>
-      </div>
+    <div class="app__parameter-wrapper">
+      <app-parameter
+        [procent]="3"
+        [title]="'Вода'"
+        [description]="'74'"
+        [image]="'cmb-water.png'"
+      ></app-parameter>
     </div>
-    <div class="combinations__parameters-item combinations__parameters-item_zola">
-      <div class="combinations__item_image">
-        8%
-      </div>
-      <div class="combinations__item-value">
-        <div class="combinations__item-title">Зола:</div>
-        <div class="combinations__item-description">1.1г</div>
-      </div>
+    <div class="app__parameter-wrapper">
+      <app-parameter
+        [procent]="2"
+        [title]="'Зола'"
+        [description]="'1.1'"
+        [image]="'cmb-zola.png'"
+      ></app-parameter>
     </div>
   </div>
   <div class="combinations__info">
     <div class="combinations__info-left">
-      <div class="combinations__calories">
-        <div class="combinations__calories-title">калории</div>
-        <div class="combinations__calories-value">
-          3400
-        </div>
-      </div>
-      <div class="combinations__coeficient">
-        <div class="combinations__calories-title">коэф. полезных веществ</div>
-        <div class="combinations__human">48%</div>
-      </div>
+      <app-calories></app-calories>
+      <app-coeficient></app-coeficient>
     </div>
     <div class="combinations__info-right">
       <div class="combinations__info-parameters">
@@ -78,3 +66,77 @@
       </div>
     </div>
   </div>
+</div>
+<div class="about__mobile">
+  <div class="about__mobule-parameters">
+    <div class="about__mobile-parameters-top">
+      <div class="about__mobile-parameter-wrapper">
+        <app-parameter
+          [procent]="8"
+          [title]="'Белки'"
+          [description]="'5.9'"
+          [image]="'cmb-proteines.png'"
+        ></app-parameter>
+      </div>
+      <div class="about__mobile-parameter-wrapper">
+        <app-parameter
+          [procent]="38"
+          [title]="'Жиры'"
+          [description]="'32'"
+          [image]="'cmb-fats.png'"
+        ></app-parameter>
+      </div>
+      <div class="about__mobile-parameter-wrapper">
+        <app-parameter
+          [procent]="19"
+          [title]="'Углеводы'"
+          [description]="'59'"
+          [image]="'cmb-colobr.png'"
+        ></app-parameter>
+      </div>
+      <div class="about__mobile-parameter-wrapper">
+        <app-parameter
+          [procent]="3"
+          [title]="'Вода'"
+          [description]="'74'"
+          [image]="'cmb-water.png'"
+        ></app-parameter>
+      </div>
+    </div>
+    <div class="about__mobile-parameters-bot">
+      <div class="about__mobile-parameter-wrapper">
+        <app-parameter
+          [procent]="3"
+          [title]="'Вода'"
+          [description]="'74'"
+          [image]="'cmb-water.png'"
+        ></app-parameter>
+        <div class="about__mobile-calories-wrapper">
+          <app-calories></app-calories>
+        </div>
+      </div>
+      <div class="about__mobile-parameter-wrapper">
+        <app-coeficient></app-coeficient>
+      </div>
+    </div>
+  </div>
+  <div class="about__mobile-panel">
+    <div class="about__mobile-panel-item">холестерин - 21.0мг</div>
+    <div class="about__mobile-panel-item">трансжиры - 0.1г</div>
+  </div>
+  <div class="about__mobile-panel">
+    <div class="about__mobile-panel-item">сахар - 59,0г</div>
+    <div class="about__mobile-panel-item">крахмал - 0.2г</div>
+    <div class="about__mobile-panel-item">клетчатка - 0.2г</div>
+  </div>
+  <div class="combinations__info-additional">
+    <div class="additional__header">
+      <div class="additional__header-item" [class.additional__header-item_active]="vitaminsActive" [routerLink]="'/combinations/about/' + currentCombination + '/vitamins'">витмины</div>
+      <div class="additional__header-item" [class.additional__header-item_active]="mineralsActive" [routerLink]="'/combinations/about/' + currentCombination + '/minerals'">минералы</div>
+      <div class="additional__header-item" [class.additional__header-item_active]="acidsActive" [routerLink]="'/combinations/about/' + currentCombination + '/amino-acids'">аминокислоты</div>
+    </div>
+    <div class="additional__content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

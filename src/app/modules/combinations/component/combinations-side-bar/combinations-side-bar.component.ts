@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { APP } from 'src/app/shared/application-constants';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RouterHelper } from 'src/app/shared/router.helper';
+import { SubjectService } from 'src/app/shared/services/subject.service';
 
 @Component({
   selector: 'app-combinations-side-bar',

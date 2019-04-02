@@ -67,3 +67,19 @@ trigger('showHide', [
   ]),
 ]);
 
+export const appearsFromLeft =
+trigger('appearsFromLeft', [
+  transition(':enter', [
+    style({
+      left: '-100%',
+    }),
+    animate(300, style({left: '0'}))
+  ]),
+  transition(':leave', [
+    style({
+      left: '0',
+    }),
+    animate(300, style({left: '-100%'}))
+  ])
+]);
+

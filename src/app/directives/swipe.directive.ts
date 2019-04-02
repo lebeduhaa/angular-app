@@ -1,4 +1,5 @@
 import { Directive, HostListener, Output, EventEmitter, ElementRef, OnInit, Input } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Directive({
   selector: '[appSwipe]'
@@ -10,8 +11,10 @@ export class SwipeDirective implements OnInit {
 
   @Input() disableRightSwipe: boolean;
   @Input() disableLeftSwipe: boolean;
+  @Input() navigationSubject: Subject<number>;
 
   private startX: number;
+  private startY: number;
 
   constructor(
     private element: ElementRef
@@ -19,11 +22,18 @@ export class SwipeDirective implements OnInit {
 
   ngOnInit() {
     (<HTMLElement>this.element.nativeElement).style.left = (screen.width - 220) / 2 + 'px';
+    this.navigationSubject
+      .subscribe(offset => {
+        const paddiing = parseInt((<HTMLElement>this.element.nativeElement).style.left, 10) || (screen.width - 220) / 2;
+
+        (<HTMLElement>this.element.nativeElement).style.left = +paddiing + offset * 245 + 'px';
+      });
   }
 
   @HostListener('touchstart', ['$event'])
   reactOnTouchEvent($event): void {
     this.startX = $event.changedTouches[0].clientX;
+    this.startY = $event.changedTouches[0].clientY;
   }
 
   @HostListener('touchend', ['$event'])

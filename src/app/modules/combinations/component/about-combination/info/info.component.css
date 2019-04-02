@@ -92,3 +92,12 @@
     height: 25px;
   }
 }
+
+@media screen and (max-width: 1550px) {
+  .info__table-head-item {
+    font-size: 7px;
+  }
+  .info__table-body-item-title, .info__table-body-item-content, .info__table-body-item-procent {
+    font-size: 8px !important;
+  }
+}

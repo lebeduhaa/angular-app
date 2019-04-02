@@ -81,16 +81,17 @@
   </div>
 
   <div class="combinations__mobile">
-    <div 
-      class="combinations__mobile-cards" 
-      appSwipe 
+    <div
+      class="combinations__mobile-cards"
+      appSwipe
+      [navigationSubject]="navigationSubject"
       (swipeRightEvent)="reactOnSwipeEvent('right')"
       (swipeLeftEvent)="reactOnSwipeEvent('left')"
       [disableRightSwipe]="disableRightSwipe()"
       [disableLeftSwipe]="disableLeftSwipe()"
     >
       <div app class="combinations__card" *ngFor="let card of allCards; let i = index;">
-        <div 
+        <div
           class="combinations__mobile-card"
           [class.combinations__mobile-card_selected]="cardSelected(i)"
         >
@@ -109,18 +110,18 @@
       </div>
     </div>
     <div class="combinations__mobile-navigation">
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(0) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(1) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(2) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(3) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(4) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(5) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(6) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(7) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(8) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(9) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(10) ? '#465057' : '#fff'}"></div>
-      <div class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(11) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(0)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(0) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(1)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(1) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(2)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(2) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(3)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(3) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(4)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(4) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(5)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(5) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(6)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(6) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(7)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(7) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(8)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(8) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(9)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(9) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(10)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(10) ? '#465057' : '#fff'}"></div>
+      <div (tap)="goTo(11)" class="combinations__mobile-navigation-item" [ngStyle]="{'background-color': isCurrentCard(11) ? '#465057' : '#fff'}"></div>
     </div>
     <div class="combinations__mobile-confirm">
       <button (click)="goToCombinations()">Продолжить</button>

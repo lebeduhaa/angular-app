@@ -9,7 +9,7 @@ import { APP } from 'src/app/shared/application-constants';
 })
 export class ProfileComponent implements OnInit {
 
-  public currentStep = 1;
+  public currentStep = 3;
   public selectedGoal = 2;
   public ages = APP.ages;
   public groups = APP.groups;

@@ -128,3 +128,9 @@ div[class*="side-bar__group-item_active"] {
     margin-top: 0;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .side-bar__header-title, .side-bar__group-title, .side-bar__group-item {
+    font-size: 11px;
+  }
+}

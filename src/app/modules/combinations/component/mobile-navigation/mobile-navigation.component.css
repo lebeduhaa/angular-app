@@ -1,0 +1,38 @@
+.navigation {
+  height: 60px;
+  display: flex;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.1);
+  background-color: #fff;
+}
+.navigation__item-wrapper {
+  padding: 20px 0;
+  flex-basis: 33.3%;
+  transition: .1s;
+  outline: none;
+}
+.navigation__item-wrapper:active {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.navigation__item {
+  font-size: 7px;
+  font-family: 'SFUIDisplay-Regular';
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-position: center top;
+  padding-top: 17px;
+  border-right: 1px solid #e1e1e1;
+}
+.navigation__item_about {
+  background-image: url('../../../../../assets/img/combinations/about.png');
+}
+.navigation__item_recipe {
+  background-image: url('../../../../../assets/img/combinations/recipes.png');
+}
+.navigation__item_own {
+  background-image: url('../../../../../assets/img/combinations/own.png');
+  border-right: none;
+}
+.header__item_active {
+  border-top: 1px solid #70c888;
+}

@@ -1,9 +1,10 @@
 .combinations {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   background-image: url('../../../../assets/img/combinations/combinations-back.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: relative;
 }
 .combinations__side-bar {
   flex-basis: 14%;
@@ -19,15 +20,52 @@
   flex-basis: 10%;
   box-shadow: 0 0 20px rgba(128, 128, 128, .1);
 }
+.combinations__content-mobile-header {
+  display: none;
+}
 .combinations__content-value {
   margin: 20px;
   flex-basiS: 90%;
   box-sizing: border-box;
 }
+.combinations__mobile-navigation {
+  display: none;
+}
 
 @media screen and (max-width: 1550px) {
   .combinations__side-bar {
     flex-basis: 20%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .combinations__side-bar {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+  }
+  .combinations__content {
+    flex-basis: 100%;
+  }
+  .combinations__content-header {
+    display: none;
+  }
+  .combinations__content-mobile-header {
+    box-shadow: 0 0 20px rgba(128, 128, 128, .1);
+    display: block;
+  }
+  .combinations__mobile-navigation {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .combinations__content-value {
+    margin: 25px 10px;
+  }
+  .combinations {
+    padding-bottom: 70px;
   }
 }
 

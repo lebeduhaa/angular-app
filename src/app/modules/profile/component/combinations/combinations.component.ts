@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { APP } from 'src/app/shared/application-constants';
 import { showHide } from 'src/app/shared/animations';
 import { RouterHelper } from 'src/app/shared/router.helper';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-profile-combinations',
@@ -22,6 +23,8 @@ export class ProfileCombinationsComponent implements OnInit {
   public animationState = '1';
   public allCards: any[];
   public currentCard = 0;
+  public navigationSubject = new Subject<number>();
+
 
   constructor(
     private routerHelper: RouterHelper
@@ -81,5 +84,12 @@ export class ProfileCombinationsComponent implements OnInit {
 
   public goToCombinations(): void {
     this.routerHelper.navigateToPage(`/combinations/about/${this.currentCard + 1}/vitamins`);
+  }
+
+  public goTo(card: number): void {
+    const diff = this.currentCard - card;
+
+    this.currentCard = card;
+    this.navigationSubject.next(diff);
   }
 }

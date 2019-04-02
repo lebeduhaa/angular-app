@@ -9,6 +9,11 @@ import { CombinationsHeaderComponent } from './component/combinations-header/com
 import { OwnCombinationComponent } from './component/own-combination/own-combination.component';
 import { AboutCombinationComponent } from './component/about-combination/about-combination.component';
 import { InfoComponent } from './component/about-combination/info/info.component';
+import { MobileHeaderComponent } from './component/mobile-header/mobile-header.component';
+import { MobileNavigationComponent } from './component/mobile-navigation/mobile-navigation.component';
+import { ParameterComponent } from './component/about-combination/parameter/parameter.component';
+import { CaloriesComponent } from './component/about-combination/calories/calories.component';
+import { CoeficientComponent } from './component/about-combination/coeficient/coeficient.component';
 
 @NgModule({
   imports: [
@@ -22,7 +27,12 @@ import { InfoComponent } from './component/about-combination/info/info.component
     CombinationsHeaderComponent,
     InfoComponent,
     OwnCombinationComponent,
-    AboutCombinationComponent
+    AboutCombinationComponent,
+    MobileHeaderComponent,
+    MobileNavigationComponent,
+    ParameterComponent,
+    CaloriesComponent,
+    CoeficientComponent
   ],
   exports: [
     CombinationsComponent
