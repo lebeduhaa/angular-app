@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 568px) {
   .own__filter {
     display: none;
   }

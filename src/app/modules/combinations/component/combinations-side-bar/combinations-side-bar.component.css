@@ -1,6 +1,7 @@
 .side-bar {
   height: 100%;
   background-color: #fff;
+  position: relative;
 }
 .side-bar__header {
   height: 150px;
@@ -103,6 +104,9 @@ div[class*="side-bar__group-item_active"] {
 .side-bar__culc-button:active {
   box-shadow: inset 0 0 5px white;
 }
+.side-bar__hide {
+  display: block;
+}
 
 @media screen and (max-width: 1550px) {
   .combinations__side-bar {
@@ -127,10 +131,19 @@ div[class*="side-bar__group-item_active"] {
   .side-bar__culc {
     margin-top: 0;
   }
+  .side-bar__hide {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 568px) {
   .side-bar__header-title, .side-bar__group-title, .side-bar__group-item {
     font-size: 11px;
+  }
+  .side-bar__hide {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
   }
 }

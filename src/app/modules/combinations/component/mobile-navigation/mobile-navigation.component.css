@@ -6,7 +6,7 @@
 }
 .navigation__item-wrapper {
   padding: 20px 0;
-  flex-basis: 33.3%;
+  flex-basis: 50%;
   transition: .1s;
   outline: none;
 }

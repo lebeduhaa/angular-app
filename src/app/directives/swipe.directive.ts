@@ -38,7 +38,9 @@ export class SwipeDirective implements OnInit {
 
   @HostListener('touchend', ['$event'])
   reactOnTouchEndEvent($event): void {
-    $event.preventDefault();
+    if (Math.abs($event.changedTouches[0].clientY - this.startY) > Math.abs($event.changedTouches[0].clientX - this.startX)) {
+      return;
+    }
 
     if ($event.changedTouches[0].clientX !== this.startX) {
       const offset = parseInt((<HTMLElement>this.element.nativeElement).style.left, 10) || (screen.width - 220) / 2;

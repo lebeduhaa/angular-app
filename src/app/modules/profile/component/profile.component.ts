@@ -9,7 +9,7 @@ import { APP } from 'src/app/shared/application-constants';
 })
 export class ProfileComponent implements OnInit {
 
-  public currentStep = 3;
+  public currentStep = 1;
   public selectedGoal = 2;
   public ages = APP.ages;
   public groups = APP.groups;
@@ -25,11 +25,15 @@ export class ProfileComponent implements OnInit {
   public pregnancy: string;
 
   ngOnInit() {
+    this.scrollToSecond();
+  }
+
+  private scrollToSecond(): void {
     setTimeout(() => {
       const element = document.querySelector('.profile__goal-cards');
 
       if (element) {
-        element.scrollTo({left: element.scrollWidth / 2 - element.clientWidth / 2});
+        element.scrollTo({left: element.scrollWidth / 2 - element.clientWidth / 2, behavior: 'smooth'});
       }
     }, 0);
   }
@@ -60,6 +64,18 @@ export class ProfileComponent implements OnInit {
 
   public changeGoal(newGoal: number): void {
     this.selectedGoal = newGoal;
+
+    switch (this.selectedGoal) {
+      case 1:
+        document.getElementById('cards').scrollTo({left: -1000, behavior: 'smooth'});
+        break;
+      case 2:
+        this.scrollToSecond();
+        break;
+      case 3:
+        document.getElementById('cards').scrollTo({left: 1000, behavior: 'smooth'});
+        break;
+    }
   }
 
   public firstGoalSelected(): boolean {

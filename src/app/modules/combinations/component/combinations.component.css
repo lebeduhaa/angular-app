@@ -67,5 +67,8 @@
   .combinations {
     padding-bottom: 70px;
   }
+  .combinations__side-bar_desktop {
+    display: none;
+  }
 }
 

@@ -21,15 +21,15 @@ export class CombinationsComponent implements OnInit {
 
   ngOnInit() {
     this.subjectService.getSubject('side-bar-subject-visibility')
-      .subscribe(value => this.showSidebar());
+      .subscribe(result => this.setSideBarVisibility(result));
   }
 
   public hideSedebar(): void {
     this.sideBarVisibility = false;
   }
 
-  public showSidebar(): void {
-    this.sideBarVisibility = true;
+  public setSideBarVisibility(result: boolean): void {
+    this.sideBarVisibility = result;
   }
 
 }

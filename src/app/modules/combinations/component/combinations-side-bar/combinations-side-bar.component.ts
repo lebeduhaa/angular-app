@@ -18,7 +18,8 @@ export class CombinationsSideBarComponent implements OnInit {
   constructor(
     private routerHelper: RouterHelper,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private subjectService: SubjectService
   ) {}
 
   ngOnInit() {
@@ -35,6 +36,10 @@ export class CombinationsSideBarComponent implements OnInit {
     } else {
       this.currentCombination = 'default';
     }
+  }
+
+  public hideSideBar(): void {
+    this.subjectService.emitSubject('side-bar-subject-visibility', false);
   }
 
   public getComgination(): string {

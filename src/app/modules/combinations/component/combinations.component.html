@@ -2,6 +2,9 @@
   <div class="combinations__side-bar" *ngIf="sideBarVisibility" @appearsFromLeft (swipeleft)="hideSedebar()">
     <app-combinations-side-bar></app-combinations-side-bar>
   </div>
+  <div class="combinations__side-bar combinations__side-bar_desktop">
+    <app-combinations-side-bar></app-combinations-side-bar>
+  </div>
   <div class="combinations__content">
     <div class="combinations__content-header">
       <app-combinations-header></app-combinations-header>
