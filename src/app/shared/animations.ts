@@ -56,7 +56,7 @@ trigger('showHide', [
     style({
       transform: 'translateX(-150%)',
       position: 'absolute',
-      top: '50px',
+      top: '0',
       left: '0'
     }),
     animate('800ms ease-in-out', style({transform: 'translateX(50px)'}))

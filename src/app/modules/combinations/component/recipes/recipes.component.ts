@@ -17,7 +17,13 @@ export class RecipesComponent  {
   public secondStepRecipes = APP.secondStepRecipes;
   public thirdStepRecipes = APP.thirdStepRecipes;
   public fourthStepRecipes = APP.fourthStepRecipes;
+  public mobileItems = APP.firstStepRecipes.concat(
+    APP.secondStepRecipes,
+    APP.thirdStepRecipes,
+    APP.fourthStepRecipes
+  );
   public currentStep = 1;
+  public currentRecipe = 0;
 
   public goNext(): void {
     this.currentStep++;
@@ -37,6 +43,16 @@ export class RecipesComponent  {
 
   public goNextDisabled(): boolean {
     return this.currentStep === 4;
+  }
+
+  public goNextMobile(): void {
+    this.currentRecipe++;
+    window.scrollTo({top: (screen.height - 123) * this.currentRecipe, behavior: 'smooth'});
+  }
+
+  public goPrevMobile(): void {
+    this.currentRecipe--;
+    window.scrollTo({top: (screen.height - 123) * this.currentRecipe, behavior: 'smooth'});
   }
 
 }

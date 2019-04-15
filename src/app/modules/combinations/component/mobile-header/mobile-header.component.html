@@ -14,7 +14,7 @@
     <input type="text" placeholder="Поиск...">
     <mat-icon>search</mat-icon>
   </div>
-  <div class="mobile-hader__icon" (click)="showSideBar()">
+  <div class="mobile-hader__icon" *ngIf="showSideBarButton" (click)="showSideBar()">
     <img src="assets/img/combinations/mobile-menu-icon.png" alt="">
   </div>
 </div>

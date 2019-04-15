@@ -14,8 +14,7 @@ export class CombinationsSideBarComponent implements OnInit {
   public currentCombination: string;
   public combinationImtes = APP.combinationImtes;
   public selectedItem: string;
-
-  private recipes: boolean;
+  public recipes: boolean;
 
   constructor(
     private routerHelper: RouterHelper,

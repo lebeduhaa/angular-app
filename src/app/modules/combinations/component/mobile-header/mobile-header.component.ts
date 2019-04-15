@@ -11,6 +11,7 @@ import { RouterHelper } from 'src/app/shared/router.helper';
 export class MobileHeaderComponent implements OnInit {
 
   public currentCombination = '1';
+  public showSideBarButton: boolean;
 
   constructor(
     private subjectService: SubjectService,
@@ -32,6 +33,12 @@ export class MobileHeaderComponent implements OnInit {
     } else {
       this.currentCombination = 'default';
     }
+
+    if (this.router.url.includes('recipes')) {
+      this.showSideBarButton = false;
+    } else {
+      this.showSideBarButton = true;
+    }
   }
 
   public showSideBar(): void {
@@ -47,11 +54,13 @@ export class MobileHeaderComponent implements OnInit {
   }
 
   public decCombination(): void {
-    this.routerHelper.navigateToPage(`/combinations/about/${Number(this.currentCombination) - 1}/vitamins`);
+    this.routerHelper
+      .navigateToPage(`/combinations/${this.router.url.split('/')[2]}/${Number(this.currentCombination) - 1}${this.router.url.includes('recipes') ? '' : '/vitamins'}`);
   }
 
   public incCombination(): void {
-    this.routerHelper.navigateToPage(`/combinations/about/${Number(this.currentCombination) + 1}/vitamins`);
+    this.routerHelper
+    .navigateToPage(`/combinations/${this.router.url.split('/')[2]}/${Number(this.currentCombination) + 1}${this.router.url.includes('recipes') ? '' : '/vitamins'}`);
   }
 
 }
