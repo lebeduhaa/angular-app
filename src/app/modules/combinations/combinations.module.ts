@@ -14,12 +14,15 @@ import { MobileNavigationComponent } from './component/mobile-navigation/mobile-
 import { ParameterComponent } from './component/about-combination/parameter/parameter.component';
 import { CaloriesComponent } from './component/about-combination/calories/calories.component';
 import { CoeficientComponent } from './component/about-combination/coeficient/coeficient.component';
+import { RecipesComponent } from './component/recipes/recipes.component';
+import { DirectivesModule } from 'src/app/directives/directives.module';
 
 @NgModule({
   imports: [
     SharedModule,
     CombinationsRoutingModule,
-    MaterialModule
+    MaterialModule,
+    DirectivesModule
   ],
   declarations: [
     CombinationsComponent,
@@ -32,7 +35,8 @@ import { CoeficientComponent } from './component/about-combination/coeficient/co
     MobileNavigationComponent,
     ParameterComponent,
     CaloriesComponent,
-    CoeficientComponent
+    CoeficientComponent,
+    RecipesComponent
   ],
   exports: [
     CombinationsComponent

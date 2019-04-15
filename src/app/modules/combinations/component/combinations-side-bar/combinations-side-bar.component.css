@@ -2,6 +2,7 @@
   height: 100%;
   background-color: #fff;
   position: relative;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.1);
 }
 .side-bar__header {
   height: 150px;

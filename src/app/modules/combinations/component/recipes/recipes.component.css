@@ -1,0 +1,169 @@
+.recipes {
+  position: relative;
+  width: fit-content;
+}
+.recipes__item {
+  width: 437px;
+  height: 618px;
+  background-image: url('../../../../../assets/img/recipes/plate.png');
+  background-size: 100% 100%;
+  margin-right: 50px;
+  border-radius: 18px;
+  transition: .2s;
+}
+.recipes__item:last-child {
+  margin-right: 0;
+}
+.recipes__wrapper {
+  display: flex;
+  margin-top: 70px;
+  height: 618px;
+  width: 1410px;
+}
+.profile__goal-card_selected, .profile__goal-card_selected-directive {
+  transform: scale(1.1);
+  padding: 15px 10px 0 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  background-size: 100% 100%;
+}
+.recipe__header {
+  margin-top: 275px;
+  margin-left: 6px;
+  margin-right: 8px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #565f67;
+  color: white;
+  padding-left: 40px;
+}
+.recipe__header-title {
+  font-family: 'MuseoSansCyrl-700';
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.recipe__description-value {
+  font-family: 'MuseoSansCyrl-700';
+  font-size: 14px;
+}
+.recipe__header-description {
+  font-family: 'MuseoSansCyrl-300';
+  font-size: 14px;
+}
+.card__parameters-title {
+  font-family: 'SFUIDisplay-Semibold';
+  font-size: 10px;
+  color: white;
+  background-image: url('../../../../../assets/img/cards/callories.png');
+  padding: 5px 0 5px 20px;
+  background-repeat: no-repeat;
+}
+.card__parameters-title_proteines {
+  background-image: url('../../../../../assets/img/cards/proteines.png');
+}
+.card__parameters-title_fats {
+  background-image: url('../../../../../assets/img/cards/fats.png');
+}
+.card__parameters-title_carbohydrates {
+  background-image: url('../../../../../assets/img/cards/carbohydrates.png');
+}
+.card__parameters-value {
+  font-size: 10px;
+  font-family: 'SFUIDisplay-Thin';
+  color: white;
+}
+.card__parameters-progress-bar {
+  margin-top: 7px;
+  width: 50px;
+  height: 3px;
+  background-color: #f0f0f0;
+}
+.card__parameters-progress {
+  height: 100%;
+  background-color: #f9b90a;
+}
+.recipe__parameters {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-top: 25px;
+}
+.recipe__items {
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe__item {
+  font-family: 'SFUIDisplay-Light';
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.recipe__actions {
+  display: flex;
+  justify-content: center;
+}
+.recipe__actions button {
+  border: 1px solid #c0c3c6;
+  text-transform: uppercase;
+  font-family: 'SFUIDisplay-Regular';
+  font-size: 13px;
+  background-color: transparent;
+  color: white;
+  padding: 17px 72px;
+  border-radius: 5px;
+  transition: .2s;
+  cursor: pointer;
+  outline: none;
+}
+.recipe__actions button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.recipe__actions button:active {
+  box-shadow: inset 0 0 10px black;
+}
+
+
+
+.combinations__navigation {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.combinations__navigation-item {
+  width: 45px;
+  height: 5px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.combinations__navigation-item:last-child {
+  margin-right: 0;
+}
+.combinations__navigation-item_active {
+  background-color: #4a545c;
+}
+.combinations__prev {
+  position: absolute;
+  top: 50%;
+  left: -80px;
+}
+.combinations__next {
+  position: absolute;
+  top: 50%;
+  right: -80px;
+}
+.combinations__prev button, .combinations__next button {
+  height: 45px;
+  width: 45px;
+}
+.combinations__prev .mat-icon, .combinations__next .mat-icon {
+  font-size: 30px;
+}
+.combinations__prev .mat-icon {
+  margin-right: -4px;
+}
+.combinations__next .mat-icon {
+  margin-left: -4px;
+}

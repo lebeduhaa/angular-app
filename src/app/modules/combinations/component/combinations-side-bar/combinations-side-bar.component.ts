@@ -15,6 +15,8 @@ export class CombinationsSideBarComponent implements OnInit {
   public combinationImtes = APP.combinationImtes;
   public selectedItem: string;
 
+  private recipes: boolean;
+
   constructor(
     private routerHelper: RouterHelper,
     private route: ActivatedRoute,
@@ -36,6 +38,12 @@ export class CombinationsSideBarComponent implements OnInit {
     } else {
       this.currentCombination = 'default';
     }
+
+    if (this.router.url.includes('recipes')) {
+      this.recipes = true;
+    } else {
+      this.recipes = false;
+    }
   }
 
   public hideSideBar(): void {
@@ -47,11 +55,11 @@ export class CombinationsSideBarComponent implements OnInit {
   }
 
   public headerNavigationVisibility(): boolean {
-    return this.currentCombination !== 'default';
+    return this.currentCombination !== 'default' && !this.recipes;
   }
 
   public getImage(): string {
-    return `url('assets/img/combinations/${this.currentCombination}.png')`;
+    return `url('assets/img/${this.recipes ? 'recipes' : 'combinations'}/${this.currentCombination}.png')`;
   }
 
   public goPrevDisabled(): boolean {

@@ -1,5 +1,11 @@
-<div class="side-bar">
-  <div class="side-bar__header" [ngStyle]="{'background-image': getImage()}">
+<div class="side-bar" [ngStyle]="{
+  'height': recipes ? 'auto' : '100%'
+}">
+  <div class="side-bar__header" [ngStyle]="{
+    'background-image': getImage(),
+    'height': recipes ? '93px' : '150px',
+    'border-bottom': recipes ? 'none' : '1px solid #e1e1e1'
+  }">
     <div class="side-bar__header-wrapper">
       <div class="side-bar__header-prev" *ngIf="headerNavigationVisibility()">
         <button [disabled]="goPrevDisabled()" (click)="decCombination()" mat-icon-button>
@@ -14,7 +20,9 @@
       </div>
     </div>
   </div>
-  <div class="side-bar__content">
+  <div class="side-bar__content" [ngStyle]="{
+    'display': recipes ? 'none' : 'block'
+  }">
     <div class="side-bar__group" *ngFor="let group of combinationImtes">
       <div class="side-bar__group-title">{{group.title}}</div>
       <div class="side-bar__group-items" *ngFor="let item of group.items">

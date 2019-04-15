@@ -1,4 +1,5 @@
 <div class="header">
   <div class="header__item" routerLink="/combinations/about" routerLinkActive="header__item_active">о комбинации</div>
+  <div class="header__item" [routerLink]="'/combinations/recipes/' + currentId" routerLinkActive="header__item_active">рецепты</div>
   <div class="header__item" routerLink="/combinations/own-combination" routerLinkActive="header__item_active">своя комбинация</div>
 </div>

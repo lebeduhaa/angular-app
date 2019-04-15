@@ -5,6 +5,7 @@ import { CombinationsComponent } from './component/combinations.component';
 import { OwnCombinationComponent } from './component/own-combination/own-combination.component';
 import { AboutCombinationComponent } from './component/about-combination/about-combination.component';
 import { InfoComponent } from './component/about-combination/info/info.component';
+import { RecipesComponent } from './component/recipes/recipes.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { InfoComponent } from './component/about-combination/info/info.component
               { path: 'amino-acids', component: InfoComponent },
             ]
           },
-          { path: 'own-combination', component: OwnCombinationComponent }
+          { path: 'own-combination', component: OwnCombinationComponent },
+          { path: 'recipes/:id', component: RecipesComponent }
         ]
       },
     ])
