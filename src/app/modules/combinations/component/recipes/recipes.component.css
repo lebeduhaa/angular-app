@@ -19,6 +19,7 @@
   height: 618px;
   width: 1324px;
   padding-top: 50px;
+  outline: none;
 }
 .profile__goal-card_selected, .profile__goal-card_selected-directive {
   transform: scale(1.1);
@@ -259,18 +260,31 @@
   }
   .recipe__mobile-wrapper {
     display: flex;
+    height: -webkit-calc(100vh - 123px);
+    height: expression(100vh - 123px);
+    height: -moz-calc(100vh - 123px);
+    height: -o-calc(100vh - 123px);
     height: calc(100vh - 123px);
     justify-content: center;
     align-items: center;
+    outline: none;
   }
   .recipe__mobile_up, .recipe__mobile_down {
     position: fixed;
   }
   .recipe__mobile_up {
+    left: -webkit-calc(50% - 20px);
+    left: expression(50% - 20px);
+    left: -moz-calc(50% - 20px);
+    left: -o-calc(50% - 20px);
     left: calc(50% - 20px);
     top: 40px;
   }
   .recipe__mobile_down {
+    left: -webkit-calc(50% - 20px);
+    left: expression(50% - 20px);
+    left: -moz-calc(50% - 20px);
+    left: -o-calc(50% - 20px);
     left: calc(50% - 20px);
     bottom: 60px;
   }

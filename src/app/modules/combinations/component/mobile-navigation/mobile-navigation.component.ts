@@ -23,7 +23,7 @@ export class MobileNavigationComponent implements OnInit {
 
   private defindId(): void {
     this.currentId = this.router.url.split('/')[3];
-    if (this.router.url.includes('recipes')) {
+    if (this.router.url.includes('recipe')) {
       this.recipes = true;
     } else {
       this.recipes = false;

@@ -38,7 +38,7 @@ export class CombinationsSideBarComponent implements OnInit {
       this.currentCombination = 'default';
     }
 
-    if (this.router.url.includes('recipes')) {
+    if (this.router.url.includes('recipe')) {
       this.recipes = true;
     } else {
       this.recipes = false;

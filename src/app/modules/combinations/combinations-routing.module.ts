@@ -6,6 +6,7 @@ import { OwnCombinationComponent } from './component/own-combination/own-combina
 import { AboutCombinationComponent } from './component/about-combination/about-combination.component';
 import { InfoComponent } from './component/about-combination/info/info.component';
 import { RecipesComponent } from './component/recipes/recipes.component';
+import { RecipeComponent } from './component/recipe/recipe.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { RecipesComponent } from './component/recipes/recipes.component';
             ]
           },
           { path: 'own-combination', component: OwnCombinationComponent },
-          { path: 'recipes/:id', component: RecipesComponent }
+          { path: 'recipes/:id', component: RecipesComponent },
+          { path: 'recipe/:id', component: RecipeComponent }
         ]
       },
     ])

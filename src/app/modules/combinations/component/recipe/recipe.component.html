@@ -1,0 +1,51 @@
+<div class="recipe">
+  <div class="recipe__recipe">
+    <div class="recipe__img">
+      <img src="assets/img/combinations/plate.png" alt="">
+    </div>
+    <div class="recipe__value">
+      <div class="recipe__value-header">
+        <div class="recipe__value-header-title">{{currentRecipe.title}}</div>
+        <div class="recipe__value-header-actions">
+          <button [disabled]="currentId === '1'" mat-icon-button (click)="goPrev()">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+          </button>
+          <button [disabled]="currentId === '12'" mat-icon-button (click)="goNext()">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="recipe__value-description">
+        <div class="recipe__value-description-item" *ngFor="let item of currentRecipe.description">{{item}}</div>
+      </div>
+      <div class="recipe__footer">
+        <div class="recipe__footer-duration"><img src="assets/img/recipes/clock.png" alt="">{{currentRecipe.duration}}</div>
+        <div class="recipe__footer-kind"><img src="assets/img/recipes/lif.png" alt="">{{currentRecipe.kind}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="recipe__components">
+    <div class="recipe__components-header">ингридиенты</div>
+    <div class="recipe__components-value">
+      <div class="recipe__components-value-icons">
+        <div class="recipe__components-item" *ngFor="let item of currentRecipe.components">
+          <div class="recipe__component-item-img">
+            <img src="assets/img/combinations/banana.png" alt="">
+          </div>
+          <div class="recipe__component-item-info">
+            <div class="recipe__component-item-info-title">{{item.name}}</div>
+            <div class="recipe__component-item-info-mass">{{item.mass}} </div>
+          </div>
+        </div>
+      </div>
+      <div class="recipe__components-value-info">
+        <div class="recipe__components-value-info-content">
+
+        </div>
+        <div class="recipe__components-value-info-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

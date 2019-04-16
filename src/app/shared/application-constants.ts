@@ -5,6 +5,272 @@ export const APP = {
     sources: '/home/sources',
     feedback: '/home/feedback'
   },
+  recipes: [
+    {
+      title: 'рецепт 1',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 2',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 3',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 4',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 5',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 6',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 7',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 8',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 9',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 10',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 11',
+      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.',
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    },
+    {
+      title: 'рецепт 12',
+      description: ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'],
+      duration: '15 - 20 мин',
+      kind: 'Вегетарианское',
+      components: [
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' },
+        { name: 'Свежие Бананы', mass: '100г' }
+      ],
+      coefficient: '48',
+      calories: '1.200',
+      proteins: '30',
+      fats: '5',
+      carbohydrates: '24'
+    }
+  ],
   firstStepCards: [
     {
       title: 'комбинация №1',

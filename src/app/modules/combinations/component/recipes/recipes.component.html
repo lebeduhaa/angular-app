@@ -39,7 +39,7 @@
         <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
       </div>
       <div class="recipe__actions">
-        <button>подробнее</button>
+        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@
         <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
       </div>
       <div class="recipe__actions">
-        <button>подробнее</button>
+        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@
         <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
       </div>
       <div class="recipe__actions">
-        <button>подробнее</button>
+        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
       </div>
     </div>
   </div>
@@ -171,7 +171,7 @@
         <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
       </div>
       <div class="recipe__actions">
-        <button>подробнее</button>
+        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
       </div>
     </div>
   </div>
@@ -243,7 +243,7 @@
         <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
       </div>
       <div class="recipe__actions">
-        <button>подробнее</button>
+        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
       </div>
     </div>
   </div>

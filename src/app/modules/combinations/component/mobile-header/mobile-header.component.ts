@@ -34,7 +34,7 @@ export class MobileHeaderComponent implements OnInit {
       this.currentCombination = 'default';
     }
 
-    if (this.router.url.includes('recipes')) {
+    if (this.router.url.includes('recipe')) {
       this.showSideBarButton = false;
     } else {
       this.showSideBarButton = true;
@@ -55,12 +55,12 @@ export class MobileHeaderComponent implements OnInit {
 
   public decCombination(): void {
     this.routerHelper
-      .navigateToPage(`/combinations/${this.router.url.split('/')[2]}/${Number(this.currentCombination) - 1}${this.router.url.includes('recipes') ? '' : '/vitamins'}`);
+      .navigateToPage(`/combinations/${this.router.url.split('/')[2]}/${Number(this.currentCombination) - 1}${this.router.url.includes('recipe') ? '' : '/vitamins'}`);
   }
 
   public incCombination(): void {
     this.routerHelper
-    .navigateToPage(`/combinations/${this.router.url.split('/')[2]}/${Number(this.currentCombination) + 1}${this.router.url.includes('recipes') ? '' : '/vitamins'}`);
+    .navigateToPage(`/combinations/${this.router.url.split('/')[2]}/${Number(this.currentCombination) + 1}${this.router.url.includes('recipe') ? '' : '/vitamins'}`);
   }
 
 }

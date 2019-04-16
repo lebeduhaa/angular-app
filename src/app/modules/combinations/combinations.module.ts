@@ -16,6 +16,7 @@ import { CaloriesComponent } from './component/about-combination/calories/calori
 import { CoeficientComponent } from './component/about-combination/coeficient/coeficient.component';
 import { RecipesComponent } from './component/recipes/recipes.component';
 import { DirectivesModule } from 'src/app/directives/directives.module';
+import { RecipeComponent } from './component/recipe/recipe.component';
 
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
     ParameterComponent,
     CaloriesComponent,
     CoeficientComponent,
-    RecipesComponent
+    RecipesComponent,
+    RecipeComponent
   ],
   exports: [
     CombinationsComponent
