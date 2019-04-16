@@ -12,6 +12,8 @@ export class MobileHeaderComponent implements OnInit {
 
   public currentCombination = '1';
   public showSideBarButton: boolean;
+  public recipe: boolean;
+  public currentRecipe: string;
 
   constructor(
     private subjectService: SubjectService,
@@ -39,6 +41,13 @@ export class MobileHeaderComponent implements OnInit {
     } else {
       this.showSideBarButton = true;
     }
+
+    if (this.router.url.split('/')[2] === 'recipe') {
+      this.recipe = true;
+      this.currentRecipe = this.router.url.split('/')[4];
+    } else {
+      this.recipe = false;
+    }
   }
 
   public showSideBar(): void {
@@ -61,6 +70,16 @@ export class MobileHeaderComponent implements OnInit {
   public incCombination(): void {
     this.routerHelper
     .navigateToPage(`/combinations/${this.router.url.split('/')[2]}/${Number(this.currentCombination) + 1}${this.router.url.includes('recipe') ? '' : '/vitamins'}`);
+  }
+
+  public decRecipe(): void {
+    this.routerHelper
+      .navigateToPage(`/combinations/recipe/${this.router.url.split('/')[3]}/${Number(this.currentRecipe) - 1}`);
+  }
+
+  public incRecipe(): void {
+    this.routerHelper
+      .navigateToPage(`/combinations/recipe/${this.router.url.split('/')[3]}/${Number(this.currentRecipe) + 1}`);
   }
 
 }

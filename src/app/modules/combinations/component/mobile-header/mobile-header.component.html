@@ -1,4 +1,4 @@
-<div class="mobile-header">
+<div class="mobile-header" *ngIf="!recipe">
   <div class="mobile-header__prev" *ngIf="currentCombination !== 'default'">
     <button [disabled]="goPrevDisabled()" (click)="decCombination()" mat-icon-button>
       <mat-icon>arrow_back_ios</mat-icon>
@@ -16,5 +16,18 @@
   </div>
   <div class="mobile-hader__icon" *ngIf="showSideBarButton" (click)="showSideBar()">
     <img src="assets/img/combinations/mobile-menu-icon.png" alt="">
+  </div>
+</div>
+<div class="mobile-header" *ngIf="recipe">
+  <div class="mobile-header__prev">
+    <button [disabled]="goPrevDisabled()" (click)="decRecipe()" mat-icon-button>
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+  </div>
+  <div class="mobile-header__title">рецепт {{currentRecipe}}</div>
+  <div class="mobile-header__next">
+    <button [disabled]="goNextDisabled()" (click)="incRecipe()" mat-icon-button>
+      <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
   </div>
 </div>

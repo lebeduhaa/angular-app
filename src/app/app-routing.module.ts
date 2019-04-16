@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      // { path: '', redirectTo: '/home/main', pathMatch: 'full' }
       { path: '', redirectTo: '/home', pathMatch: 'full' }
     ])
   ],

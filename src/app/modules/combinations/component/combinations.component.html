@@ -12,7 +12,7 @@
     <div class="combinations__content-mobile-header">
       <app-mobile-header></app-mobile-header>
     </div>
-    <div class="combinations__content-value">
+    <div class="combinations__content-value" [ngStyle]="{'margin': recipe ? '0' : (smallScreen ? '25px 10px' : '20px')}">
       <router-outlet></router-outlet>
     </div>
   </div>

@@ -17,7 +17,7 @@
   width: 100%;
 }
 .combinations__content-header {
-  flex-basis: 10%;
+  height: 80px;
   box-shadow: 0 0 20px rgba(128, 128, 128, .1);
 }
 .combinations__content-mobile-header {
@@ -66,7 +66,8 @@
     margin: 25px 10px;
   }
   .combinations {
-    padding-bottom: 70px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
   }
   .combinations__side-bar_desktop {
     display: none;

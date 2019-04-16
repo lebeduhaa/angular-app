@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { APP } from 'src/app/shared/application-constants';
 import { showHide } from 'src/app/shared/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipes',
@@ -11,7 +12,9 @@ import { showHide } from 'src/app/shared/animations';
     showHide
   ]
 })
-export class RecipesComponent  {
+export class RecipesComponent implements OnInit  {
+
+
 
   public firstStepRecipes = APP.firstStepRecipes;
   public secondStepRecipes = APP.secondStepRecipes;
@@ -24,6 +27,15 @@ export class RecipesComponent  {
   );
   public currentStep = 1;
   public currentRecipe = 0;
+  public currentCombination: string;
+
+  constructor(
+    private router: Router
+  ) {}
+
+  ngOnInit() {
+    this.currentCombination = this.router.url.split('/')[3];
+  }
 
   public goNext(): void {
     this.currentStep++;
@@ -46,13 +58,13 @@ export class RecipesComponent  {
   }
 
   public goNextMobile(): void {
-    this.currentRecipe++;
-    window.scrollTo({top: (screen.height - 123) * this.currentRecipe, behavior: 'smooth'});
+    this.currentRecipe = Math.floor(window.pageYOffset / (document.body.clientHeight - 105) + 1);
+    window.scrollTo({top: (document.body.clientHeight - 105) * this.currentRecipe, behavior: 'smooth'});
   }
 
   public goPrevMobile(): void {
-    this.currentRecipe--;
-    window.scrollTo({top: (screen.height - 123) * this.currentRecipe, behavior: 'smooth'});
+    this.currentRecipe = Math.floor((window.pageYOffset + document.body.clientHeight / 2) / (document.body.clientHeight - 105) - 1);
+    window.scrollTo({top: (document.body.clientHeight - 105) * this.currentRecipe, behavior: 'smooth'});
   }
 
 }

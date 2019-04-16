@@ -1,5 +1,7 @@
 .recipe {
   width: 1450px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 .recipe__recipe {
   display: flex;
@@ -78,6 +80,9 @@
 }
 .recipe__components-value-info {
   flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .recipe__components-value-icons {
   display: flex;
@@ -100,4 +105,127 @@
   font-size: 15px;
   font-family: 'SFUIDisplay-Thin';
   color: '#757575';
+}
+.recipe__components-value-info-content-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.recipe__components-value-info-content {
+  padding: 30px 25px;
+}
+.recipe__components-value-info-content-item-key {
+  font-size: 16px;
+  font-family: 'SFUIDisplay-Regular';
+}
+.recipe__components-value-info-content-item-value {
+  font-size: 16px;
+  font-family: 'SFUIDisplay-Thin';
+}
+.recipe__components-value-info-footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e1e1e1;
+  font-size: 15px;
+  font-family: 'SFUIDisplay-Regular';
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.recipe__components-value-info-footer img {
+  margin-left: 15px;
+}
+.recipe__components-value-info-footer:hover {
+  background-color: rgba(0, 0, 0, 0.041);
+}
+.recipe__components-value-info-footer:active {
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.295);
+}
+.recipe__value-header-title {
+  display: block;
+}
+.recipe__value-header-title_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1550px) {
+  .recipe__img {
+    width: 40%;
+    padding-right: 10px;
+  }
+  .recipe__img img {
+    width: 100%
+  }
+  .recipe[_ngcontent-c8] {
+    width: 1100px;
+    margin-left: -150px;
+  }
+  .recipe__value[_ngcontent-c8] {
+    width: 60%;
+  }
+  .recipe__value-header {
+    height: 52px;
+    padding: 17px 25px;
+  }
+  .recipe__footer {
+    height: 52px;
+  }
+  .recipe__value-description {
+    padding: 10px;
+  }
+  .recipe__value-description-item {
+    margin-bottom: 5px;
+  }
+  .recipe__value-header-title {
+    display: block;
+  }
+  .recipe__value-header-title_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .recipe__recipe {
+    flex-direction: column;
+    padding: 0 5px;
+  }
+  .recipe {
+    width: auto !important;
+    height: auto;
+    margin-left: 0 !important;
+  }
+  .recipe__img {
+    width: 100%;
+  }
+  .recipe__value {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .recipe__components-value {
+    flex-direction: column;
+  }
+  .recipe__components-value-icons {
+    border-bottom: 1px solid #e1e1e1;
+    border-right: none;
+  }
+  .recipe__components {
+    margin: 0 5px;
+  }
+  .recipe__value-header-actions {
+    display: none;
+  }
+  .recipe__value-header-title {
+    display: none;
+    font-size: 10px;
+  }
+  .recipe__value-header-title_mobile {
+    display: block;
+  }
+  .recipe__value-description-item {
+    font-size: 11px;
+  }
+  .recipe__value-description {
+    line-height: 20px;
+  }
 }

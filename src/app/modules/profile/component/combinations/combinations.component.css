@@ -1,5 +1,5 @@
 .combinations {
-  width: 1000px;
+  width: 883px;
   margin: 0 auto;
   margin-top: 80px;
   position: relative;
@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   padding: 50px 0;
+  position: absolute;
 }
 .combinations__card {
   margin-right: 50px;
@@ -37,17 +38,19 @@
   background-color: #4a545c;
 }
 .combinations__cards {
+  width: 883px;
+  height: 545px;
   overflow: hidden;
 }
 .combinations__prev {
   position: absolute;
   top: 50%;
-  left: -30px;
+  left: -100px;
 }
 .combinations__next {
   position: absolute;
   top: 50%;
-  right: -30px;
+  right: -100px;
 }
 .combinations__prev button, .combinations__next button {
   height: 45px;

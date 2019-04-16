@@ -27,21 +27,21 @@ export class RecipeComponent implements OnInit {
   }
 
   private defindRecipe(): void {
-    this.currentId = this.router.url.split('/')[3];
+    this.currentId = this.router.url.split('/')[4];
 
     this.currentRecipe = this.recipes.find(recipe => recipe.title.includes(this.currentId));
   }
 
   public goPrev(): void {
     const tempResult = this.router.url.split('/');
-    tempResult[3] = String(Number(this.currentId) - 1);
+    tempResult[4] = String(Number(this.currentId) - 1);
 
     this.routerHelper.navigateToPage(tempResult.join('/'));
   }
 
   public goNext(): void {
     const tempResult = this.router.url.split('/');
-    tempResult[3] = String(Number(this.currentId) + 1);
+    tempResult[4] = String(Number(this.currentId) + 1);
 
     this.routerHelper.navigateToPage(tempResult.join('/'));
   }

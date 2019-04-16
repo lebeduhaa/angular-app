@@ -6,6 +6,7 @@
     <div class="recipe__value">
       <div class="recipe__value-header">
         <div class="recipe__value-header-title">{{currentRecipe.title}}</div>
+        <div class="recipe__value-header-title recipe__value-header-title_mobile">как готовить?</div>
         <div class="recipe__value-header-actions">
           <button [disabled]="currentId === '1'" mat-icon-button (click)="goPrev()">
             <mat-icon>keyboard_arrow_left</mat-icon>
@@ -40,10 +41,30 @@
       </div>
       <div class="recipe__components-value-info">
         <div class="recipe__components-value-info-content">
-
+          <div class="recipe__components-value-info-content-item">
+            <div class="recipe__components-value-info-content-item-key">Коэф. полезных веществ</div>
+            <div class="recipe__components-value-info-content-item-value">{{currentRecipe.coefficient}}%</div>
+          </div>
+          <div class="recipe__components-value-info-content-item">
+            <div class="recipe__components-value-info-content-item-key">Каллории</div>
+            <div class="recipe__components-value-info-content-item-value">{{currentRecipe.calories}}кКал</div>
+          </div>
+          <div class="recipe__components-value-info-content-item">
+            <div class="recipe__components-value-info-content-item-key">Белок</div>
+            <div class="recipe__components-value-info-content-item-value">{{currentRecipe.proteins}}г</div>
+          </div>
+          <div class="recipe__components-value-info-content-item">
+            <div class="recipe__components-value-info-content-item-key">Жиры</div>
+            <div class="recipe__components-value-info-content-item-value">{{currentRecipe.fats}}г</div>
+          </div>
+          <div class="recipe__components-value-info-content-item">
+            <div class="recipe__components-value-info-content-item-key">Углеводы</div>
+            <div class="recipe__components-value-info-content-item-value">{{currentRecipe.carbohydrates}}г</div>
+          </div>
         </div>
         <div class="recipe__components-value-info-footer">
-
+          перейти к компонентам
+          <img src="../../../../../assets/img/recipes/arrow-right.png" alt="">
         </div>
       </div>
     </div>

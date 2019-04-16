@@ -26,8 +26,8 @@ import { RecipeComponent } from './component/recipe/recipe.component';
             ]
           },
           { path: 'own-combination', component: OwnCombinationComponent },
-          { path: 'recipes/:id', component: RecipesComponent },
-          { path: 'recipe/:id', component: RecipeComponent }
+          { path: 'recipes/:combination', component: RecipesComponent },
+          { path: 'recipe/:combination/:recipe', component: RecipeComponent }
         ]
       },
     ])

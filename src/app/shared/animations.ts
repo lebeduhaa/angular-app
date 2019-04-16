@@ -59,7 +59,7 @@ trigger('showHide', [
       top: '0',
       left: '0'
     }),
-    animate('800ms ease-in-out', style({transform: 'translateX(50px)'}))
+    animate('800ms ease-in-out', style({transform: 'translateX(0)'}))
   ]),
   transition(':leave', [
     style({transform: 'translateX(0)'}),

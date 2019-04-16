@@ -15,6 +15,7 @@ export class CombinationsSideBarComponent implements OnInit {
   public combinationImtes = APP.combinationImtes;
   public selectedItem: string;
   public recipes: boolean;
+  public smallScreen: boolean;
 
   constructor(
     private routerHelper: RouterHelper,
@@ -27,6 +28,7 @@ export class CombinationsSideBarComponent implements OnInit {
     this.route.url
       .subscribe(url => this.defineCombination());
     this.defineCombination();
+    this.smallScreen = screen.width <= 568;
   }
 
   private defineCombination(): void {

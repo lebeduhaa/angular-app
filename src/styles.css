@@ -9,7 +9,6 @@
 
 body, html {
   height: 100vh;
-  /* height: 100%; */
 }
 
 .mat-select-value, input.mat-input-element {

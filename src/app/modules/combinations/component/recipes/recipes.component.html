@@ -1,180 +1,183 @@
 <div class="recipes recipes__desktop">
-  <div @showHide class="recipes__wrapper" *ngIf="currentStep === 1">
-    <div class="recipes__item" appHoverScale *ngFor="let recipe of firstStepRecipes">
-      <div class="recipe__header">
-        <div class="recipe__header-title">{{recipe.title}}</div>
-        <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
+  <div class="recipes__desktop-wrapper">
+    <div @showHide class="recipes__wrapper" *ngIf="currentStep === 1">
+      <div class="recipes__item" appHoverScale *ngFor="let recipe of firstStepRecipes">
+        <div class="recipe__header">
+          <div class="recipe__header-title">{{recipe.title}}</div>
+          <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
+        </div>
+        <div class="recipe__parameters">
+          <div class="card__parameters">
+            <div class="card__parameters-title">Калории</div>
+            <div class="card__parameters-value">{{recipe.calories}} кКал</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
+            <div class="card__parameters-value">{{recipe.proteins}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
+            <div class="card__parameters-value">{{recipe.fats}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
+            <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="recipe__items">
+          <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
+        </div>
+        <div class="recipe__actions">
+          <button [routerLink]="'/combinations/recipe/' + currentCombination + '/' + recipe.link">подробнее</button>
+        </div>
       </div>
-      <div class="recipe__parameters">
-        <div class="card__parameters">
-          <div class="card__parameters-title">Калории</div>
-          <div class="card__parameters-value">{{recipe.calories}} кКал</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
+    </div>
+    <div @showHide class="recipes__wrapper" *ngIf="currentStep === 2">
+      <div class="recipes__item" appHoverScale *ngFor="let recipe of secondStepRecipes">
+        <div class="recipe__header">
+          <div class="recipe__header-title">{{recipe.title}}</div>
+          <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
+        </div>
+        <div class="recipe__parameters">
+          <div class="card__parameters">
+            <div class="card__parameters-title">Калории</div>
+            <div class="card__parameters-value">{{recipe.calories}} кКал</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
+            <div class="card__parameters-value">{{recipe.proteins}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
+            <div class="card__parameters-value">{{recipe.fats}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
+            <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
+            </div>
           </div>
         </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
-          <div class="card__parameters-value">{{recipe.proteins}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
-          </div>
+        <div class="recipe__items">
+          <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
         </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
-          <div class="card__parameters-value">{{recipe.fats}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
-          <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
-          </div>
+        <div class="recipe__actions">
+          <button [routerLink]="'/combinations/recipe/' + currentCombination + '/' + recipe.link">подробнее</button>
         </div>
       </div>
-      <div class="recipe__items">
-        <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
+    </div>
+    <div @showHide class="recipes__wrapper" *ngIf="currentStep === 3">
+      <div class="recipes__item" appHoverScale *ngFor="let recipe of thirdStepRecipes">
+        <div class="recipe__header">
+          <div class="recipe__header-title">{{recipe.title}}</div>
+          <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
+        </div>
+        <div class="recipe__parameters">
+          <div class="card__parameters">
+            <div class="card__parameters-title">Калории</div>
+            <div class="card__parameters-value">{{recipe.calories}} кКал</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
+            <div class="card__parameters-value">{{recipe.proteins}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
+            <div class="card__parameters-value">{{recipe.fats}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
+            <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="recipe__items">
+          <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
+        </div>
+        <div class="recipe__actions">
+          <button [routerLink]="'/combinations/recipe/' + currentCombination + '/' + recipe.link">подробнее</button>
+        </div>
       </div>
-      <div class="recipe__actions">
-        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
+    </div>
+    <div @showHide class="recipes__wrapper" *ngIf="currentStep === 4">
+      <div class="recipes__item" appHoverScale *ngFor="let recipe of fourthStepRecipes">
+        <div class="recipe__header">
+          <div class="recipe__header-title">{{recipe.title}}</div>
+          <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
+        </div>
+        <div class="recipe__parameters">
+          <div class="card__parameters">
+            <div class="card__parameters-title">Калории</div>
+            <div class="card__parameters-value">{{recipe.calories}} кКал</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
+            <div class="card__parameters-value">{{recipe.proteins}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
+            <div class="card__parameters-value">{{recipe.fats}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
+            </div>
+          </div>
+          <div class="card__parameters">
+            <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
+            <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
+            <div class="card__parameters-progress-bar">
+              <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="recipe__items">
+          <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
+        </div>
+        <div class="recipe__actions">
+          <button [routerLink]="'/combinations/recipe/' + currentCombination + '/' + recipe.link">подробнее</button>
+        </div>
       </div>
     </div>
   </div>
-  <div @showHide class="recipes__wrapper" *ngIf="currentStep === 2">
-    <div class="recipes__item" appHoverScale *ngFor="let recipe of secondStepRecipes">
-      <div class="recipe__header">
-        <div class="recipe__header-title">{{recipe.title}}</div>
-        <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
-      </div>
-      <div class="recipe__parameters">
-        <div class="card__parameters">
-          <div class="card__parameters-title">Калории</div>
-          <div class="card__parameters-value">{{recipe.calories}} кКал</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
-          <div class="card__parameters-value">{{recipe.proteins}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
-          <div class="card__parameters-value">{{recipe.fats}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
-          <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe__items">
-        <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
-      </div>
-      <div class="recipe__actions">
-        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
-      </div>
-    </div>
-  </div>
-  <div @showHide class="recipes__wrapper" *ngIf="currentStep === 3">
-    <div class="recipes__item" appHoverScale *ngFor="let recipe of thirdStepRecipes">
-      <div class="recipe__header">
-        <div class="recipe__header-title">{{recipe.title}}</div>
-        <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
-      </div>
-      <div class="recipe__parameters">
-        <div class="card__parameters">
-          <div class="card__parameters-title">Калории</div>
-          <div class="card__parameters-value">{{recipe.calories}} кКал</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
-          <div class="card__parameters-value">{{recipe.proteins}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
-          <div class="card__parameters-value">{{recipe.fats}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
-          <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe__items">
-        <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
-      </div>
-      <div class="recipe__actions">
-        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
-      </div>
-    </div>
-  </div>
-  <div @showHide class="recipes__wrapper" *ngIf="currentStep === 4">
-    <div class="recipes__item" appHoverScale *ngFor="let recipe of fourthStepRecipes">
-      <div class="recipe__header">
-        <div class="recipe__header-title">{{recipe.title}}</div>
-        <div class="recipe__header-description">Коэфф.полезных веществ <span class="recipe__description-value">{{recipe.coefficient}}%</span></div>
-      </div>
-      <div class="recipe__parameters">
-        <div class="card__parameters">
-          <div class="card__parameters-title">Калории</div>
-          <div class="card__parameters-value">{{recipe.calories}} кКал</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '20%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_proteines">Белки</div>
-          <div class="card__parameters-value">{{recipe.proteins}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '30%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_fats">Жиры</div>
-          <div class="card__parameters-value">{{recipe.fats}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '10%'}"></div>
-          </div>
-        </div>
-        <div class="card__parameters">
-          <div class="card__parameters-title card__parameters-title_carbohydrates">Углеводы</div>
-          <div class="card__parameters-value">{{recipe.carbohydrates}} г</div>
-          <div class="card__parameters-progress-bar">
-            <div class="card__parameters-progress" [ngStyle]="{'width': '15%'}"></div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe__items">
-        <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
-      </div>
-      <div class="recipe__actions">
-        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
-      </div>
-    </div>
-  </div>
+
   <div class="combinations__prev">
     <button [disabled]="goPrevDisabled()" (click)="goPrev()" mat-icon-button>
       <mat-icon>arrow_back_ios</mat-icon>
@@ -192,18 +195,13 @@
     <div class="combinations__navigation-item" (click)="goTo(4)" [class.combinations__navigation-item_active]="currentStep === 4"></div>
   </div>
 </div>
-<div class="recipe__mobile">
-  <div class="recipe__mobile_up">
-    <button [disabled]="currentRecipe === 0" mat-icon-button color="primary" (click)="goPrevMobile()">
-      <mat-icon>keyboard_arrow_up</mat-icon>
-    </button>
-  </div>
-  <div class="recipe__mobile_down">
-    <button [disabled]="currentRecipe === 11" mat-icon-button color="primary" (click)="goNextMobile()">
-      <mat-icon>keyboard_arrow_down</mat-icon>
-    </button>
-  </div>
-  <div class="recipe__mobile-wrapper" *ngFor="let recipe of mobileItems" (swipeup)="goPrevMobile()" (swipedown)="goNextMobile()">
+<div class="recipe__mobile_up">
+  <button mat-icon-button color="primary" (click)="goPrevMobile()">
+    <mat-icon>keyboard_arrow_up</mat-icon>
+  </button>
+</div>
+<div class="recipe__mobile" *ngFor="let recipe of mobileItems">
+  <div class="recipe__mobile-wrapper">
     <div class="recipes__item">
       <div class="recipe__header">
         <div class="recipe__header-title">{{recipe.title}}</div>
@@ -243,8 +241,13 @@
         <div class="recipe__item" *ngFor="let item of recipe.components;let i = index;">{{item + (i === recipe.components.length - 1 ? '' : ', ')}}</div>
       </div>
       <div class="recipe__actions">
-        <button [routerLink]="'/combinations/recipe/' + recipe.link">подробнее</button>
+        <button [routerLink]="'/combinations/recipe/' + currentCombination + '/' + recipe.link">подробнее</button>
       </div>
     </div>
   </div>
+</div>
+<div class="recipe__mobile_down">
+  <button mat-icon-button color="primary" (click)="goNextMobile()">
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </button>
 </div>
