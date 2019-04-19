@@ -9,7 +9,7 @@
 }
 .combinations__side-bar {
   flex-basis: 14%;
-  z-index: 2;
+  z-index: 11;
 }
 .combinations__content {
   display: flex;

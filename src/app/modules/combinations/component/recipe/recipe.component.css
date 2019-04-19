@@ -228,4 +228,20 @@
   .recipe__value-description {
     line-height: 20px;
   }
+  .recipe__components-header {
+    font-size: 15px;
+  }
+  .recipe__components-value-icons {
+    justify-content: center;
+  }
+  .recipe__components-value-info-content-item div {
+    font-size: 13px !important;
+  }
+  .recipe__components-value-info-content-item {
+    margin-bottom: 15px;
+  }
+  .recipe__components-value-info-footer {
+    height: 40px;
+    font-size: 11px;
+  }
 }

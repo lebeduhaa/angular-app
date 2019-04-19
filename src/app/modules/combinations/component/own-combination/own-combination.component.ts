@@ -9,6 +9,6 @@ import { APP } from 'src/app/shared/application-constants';
 export class OwnCombinationComponent {
 
   public a = APP.products.a;
-  public b = APP.products.a;
+  public b = APP.products.b;
 
 }
